@@ -1,0 +1,269 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "Identify Braille whole word contractions from their dots.", 
+    "Name": "Braille whole word contractions", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "Can you name this contraction?", 
+        "Sounds/Misc/Braille whole word contractions_Question_2"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "b for but"
+            ], 
+            "Hint": [], 
+            "Name": "b for but", 
+            "Picture": [], 
+            "Prompt": [
+                "Dot 1 and 2."
+            ]
+        }, 
+        {
+            "Answer": [
+                "c for can"
+            ], 
+            "Hint": [], 
+            "Name": "c for can", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1 and 4."
+            ]
+        }, 
+        {
+            "Answer": [
+                "d for do"
+            ], 
+            "Hint": [], 
+            "Name": "d for do", 
+            "Picture": [], 
+            "Prompt": [
+                "Dot 1, 4, and 5.\n"
+            ]
+        }, 
+        {
+            "Answer": [
+                "e for every"
+            ], 
+            "Hint": [], 
+            "Name": "e for every", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1 and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "f for from"
+            ], 
+            "Hint": [], 
+            "Name": "f for from", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, and 4."
+            ]
+        }, 
+        {
+            "Answer": [
+                "g for go"
+            ], 
+            "Hint": [], 
+            "Name": "g for go", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, 4, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "h for have"
+            ], 
+            "Hint": [], 
+            "Name": "h for have", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "j for just"
+            ], 
+            "Hint": [], 
+            "Name": "j for just", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 2, 4, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "k for knowledge"
+            ], 
+            "Hint": [], 
+            "Name": "k for knowledge", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1 and 3."
+            ]
+        }, 
+        {
+            "Answer": [
+                "l for like"
+            ], 
+            "Hint": [], 
+            "Name": "l for like", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, and 3."
+            ]
+        }, 
+        {
+            "Answer": [
+                "m for more"
+            ], 
+            "Hint": [], 
+            "Name": "m for more", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, and 4."
+            ]
+        }, 
+        {
+            "Answer": [
+                "n for not"
+            ], 
+            "Hint": [], 
+            "Name": "n for not", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, 4, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "p for people"
+            ], 
+            "Hint": [], 
+            "Name": "p for people", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, 3, and 4."
+            ]
+        }, 
+        {
+            "Answer": [
+                "q for quite"
+            ], 
+            "Hint": [], 
+            "Name": "q for quite", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, 3, 4, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "r for rather"
+            ], 
+            "Hint": [], 
+            "Name": "r for rather", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, 3, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "s for so"
+            ], 
+            "Hint": [], 
+            "Name": "s for so", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 2, 3, and 4."
+            ]
+        }, 
+        {
+            "Answer": [
+                "t for that"
+            ], 
+            "Hint": [], 
+            "Name": "t for that", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 2, 3, 4, and 5."
+            ]
+        }, 
+        {
+            "Answer": [
+                "u for us"
+            ], 
+            "Hint": [], 
+            "Name": "u for us", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, and 6."
+            ]
+        }, 
+        {
+            "Answer": [
+                "v for very"
+            ], 
+            "Hint": [], 
+            "Name": "v for very", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 2, 3, and 6."
+            ]
+        }, 
+        {
+            "Answer": [
+                "w for will"
+            ], 
+            "Hint": [], 
+            "Name": "w for will", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 2, 4, 5, and 6."
+            ]
+        }, 
+        {
+            "Answer": [
+                "x for it"
+            ], 
+            "Hint": [], 
+            "Name": "x for it", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, 4, and 6."
+            ]
+        }, 
+        {
+            "Answer": [
+                "y for you"
+            ], 
+            "Hint": [], 
+            "Name": "y for you", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, 4, 5, and 6."
+            ]
+        }, 
+        {
+            "Answer": [
+                "z for as"
+            ], 
+            "Hint": [], 
+            "Name": "z for as", 
+            "Picture": [], 
+            "Prompt": [
+                "Dots 1, 3, 5, and 6."
+            ]
+        }
+    ]
+}
