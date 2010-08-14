@@ -1,0 +1,110 @@
+{
+    "HarkInstructions": "Welcome to Hark The Sound. Use the arrow keys to choose a game to play. Use the \"up\" arrow to start a game.",
+        
+    "Games": [
+        { 
+            "Type": "Category",
+            "Name": "Walmart Categories",
+            "Description": "Walmart Categories: in this category game you learn about what items belong in the different departments in Walmart.",
+            "GameDataUrl": "games/Category_Games/Walmart_Categories.json"
+        },
+        { 
+            "Type": "Category",
+            "Name": "Learn About Food Groups",
+            "Description": "Learn About Food Groups: in this game you can learn about the different food groups, such as fruits, vegetables, breads, meats, and dairy.",
+            "GameDataUrl": "games/Category_Games/Learn_About_Food_Groups.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Name That Musical Instrument",
+            "Description": "Name That Musical Instrument: try to guess the instrument from the sound it makes.",
+            "GameDataUrl": "games/Naming_Games/Name_That_Musical_Instrument.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Name That Animal",
+            "Description": "Name That Animal: a classic Hark the Sound guessing game.",
+            "GameDataUrl": "games/Naming_Games/Name_That_Animal.json"
+        },
+        {
+            "Type": "Naming",
+            "Name": "Name That Capital's State",
+            "Description": "Name That Capital's State: how well do you know the capitals of these states?",
+            "GameDataUrl": "games/Naming_Games/Name_That_Capital's_State.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Name That Color",
+            "Description": "Name That Color: attempt to match common objects with their typical colors.",
+            "GameDataUrl": "games/Naming_Games/Name_That_Color.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Name That Holiday",
+            "Description": "Name That Holiday: match these prompts with the corresponding holiday.",
+            "GameDataUrl": "games/Naming_Games/Name_That_Holiday.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Name That Sound",
+            "Description": "Name That Sound: identify environmental sounds.",
+            "GameDataUrl": "games/Naming_Games/Name_That_Sound.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "Spanish Words",
+            "Description": "Spanish Words: do you know the translation of these Spanish words into English?",
+            "GameDataUrl": "games/Naming_Games/Spanish_Words.json"
+        },
+        { 
+            "Type": "Naming",
+            "Name": "State Nick Names",
+            "Description": "State Nick Names: match the state with its nick name.",
+            "GameDataUrl": "games/Naming_Games/State_Nick_Names.json"
+        },
+        { 
+            "Type": "Math",
+            "Name": "Multiplication drills",
+            "Description": "Fun with addition",
+            "GameDataUrl": "games/Math_Games/Multiplication_drills.json"
+        },
+        { 
+            "Type": "Math",
+            "Name": "Addition 1 through 5",
+            "Description": "Fun with addition",
+            "GameDataUrl": "games/Math_Games/Addition_1_through_5.json"
+        },
+        { 
+            "Type": "Math",
+            "Name": "Addition easy 6 through 10",
+            "Description": "More fun with addition",
+            "GameDataUrl": "games/Math_Games/Addition_easy_6_through_10.json"
+        },
+        { 
+            "Type": "Math",
+            "Name": "Addition hard 6 through 10",
+            "Description": "More challenging addition",
+            "GameDataUrl": "games/Math_Games/Addition_hard_6_through_10.json"
+        },
+        { 
+            "Type": "Math",
+            "Name": "Counting",
+            "Description": "How good are you at counting?",
+            "GameDataUrl": "games/Math_Games/Counting.json"
+        },
+        { 
+            "Type": "Braille",
+            "Name": "Braille letters",
+            "Description": "Identify Braille letters given their dots.",
+            "GameDataUrl": "games/Braille_Games/Braille_letters.json"
+        },
+        { 
+            "Type": "Braille",
+            "Name": "Braille whole word contractions",
+            "Description": "Identify Braille whole word contractions from their dots.",
+            "GameDataUrl": "games/Braille_Games/Braille_whole_word_contractions.json"
+        },
+    ]
+}
+
+
