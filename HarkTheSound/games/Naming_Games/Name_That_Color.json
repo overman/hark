@@ -1,0 +1,124 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "A classic Hark the Sound guessing game.", 
+    "Name": "Name that color", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "What color is this?"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "black"
+            ], 
+            "Hint": [], 
+            "Name": "black", 
+            "Picture": [], 
+            "Prompt": [
+                "night", 
+                "witch's hat"
+            ]
+        }, 
+        {
+            "Answer": [
+                "black and white"
+            ], 
+            "Hint": [], 
+            "Name": "black and white", 
+            "Picture": [], 
+            "Prompt": [
+                "zebra", 
+                "Dalmation dog"
+            ]
+        }, 
+        {
+            "Answer": [
+                "blue"
+            ], 
+            "Hint": [], 
+            "Name": "blue", 
+            "Picture": [], 
+            "Prompt": [
+                "Sky", 
+                "Lake"
+            ]
+        }, 
+        {
+            "Answer": [
+                "green"
+            ], 
+            "Hint": [], 
+            "Name": "green", 
+            "Picture": [], 
+            "Prompt": [
+                "Grass", 
+                "Granny Smith Apples", 
+                "Pickle"
+            ]
+        }, 
+        {
+            "Answer": [
+                "orange"
+            ], 
+            "Hint": [], 
+            "Name": "orange", 
+            "Picture": [], 
+            "Prompt": [
+                "pumpkin", 
+                "tangerine"
+            ]
+        }, 
+        {
+            "Answer": [
+                "purple"
+            ], 
+            "Hint": [], 
+            "Name": "purple", 
+            "Picture": [], 
+            "Prompt": [
+                "Barney the dinosaur", 
+                "Grapes"
+            ]
+        }, 
+        {
+            "Answer": [
+                "red"
+            ], 
+            "Hint": [], 
+            "Name": "red", 
+            "Picture": [], 
+            "Prompt": [
+                "Santa's suit", 
+                "Fire truck"
+            ]
+        }, 
+        {
+            "Answer": [
+                "white"
+            ], 
+            "Hint": [], 
+            "Name": "white", 
+            "Picture": [], 
+            "Prompt": [
+                "snow"
+            ]
+        }, 
+        {
+            "Answer": [
+                "yellow"
+            ], 
+            "Hint": [], 
+            "Name": "yellow", 
+            "Picture": [], 
+            "Prompt": [
+                "The Sun", 
+                "Banana", 
+                "School bus"
+            ]
+        }
+    ]
+}

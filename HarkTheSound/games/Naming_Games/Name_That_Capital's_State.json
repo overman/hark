@@ -1,0 +1,566 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "A classic Hark the Sound guessing game.", 
+    "Name": "Name that capital's state", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "can you name the state whose capital is..", 
+        "What state does this capital belong to?"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "Alabama"
+            ], 
+            "Hint": [], 
+            "Name": "Alabama", 
+            "Picture": [], 
+            "Prompt": [
+                "Montgomery"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Alaska"
+            ], 
+            "Hint": [], 
+            "Name": "Alaska", 
+            "Picture": [], 
+            "Prompt": [
+                "Juneau"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Arizona"
+            ], 
+            "Hint": [], 
+            "Name": "Arizona", 
+            "Picture": [], 
+            "Prompt": [
+                "Phoenix"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Arkansas"
+            ], 
+            "Hint": [], 
+            "Name": "Arkansas", 
+            "Picture": [], 
+            "Prompt": [
+                "Little Rock"
+            ]
+        }, 
+        {
+            "Answer": [
+                "California"
+            ], 
+            "Hint": [], 
+            "Name": "California", 
+            "Picture": [], 
+            "Prompt": [
+                "Sacramento"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Colorado"
+            ], 
+            "Hint": [], 
+            "Name": "Colorado", 
+            "Picture": [], 
+            "Prompt": [
+                "Denver"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Connecticut"
+            ], 
+            "Hint": [], 
+            "Name": "Connecticut", 
+            "Picture": [], 
+            "Prompt": [
+                "Hartford"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Delaware"
+            ], 
+            "Hint": [], 
+            "Name": "Delaware", 
+            "Picture": [], 
+            "Prompt": [
+                "Dover"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Florida"
+            ], 
+            "Hint": [], 
+            "Name": "Florida", 
+            "Picture": [], 
+            "Prompt": [
+                "Tallahassee"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Georgia"
+            ], 
+            "Hint": [], 
+            "Name": "Georgia", 
+            "Picture": [], 
+            "Prompt": [
+                "Atlanta"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Hawaii"
+            ], 
+            "Hint": [], 
+            "Name": "Hawaii", 
+            "Picture": [], 
+            "Prompt": [
+                "Honolulu"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Idaho"
+            ], 
+            "Hint": [], 
+            "Name": "Idaho", 
+            "Picture": [], 
+            "Prompt": [
+                "Boise"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Illinois"
+            ], 
+            "Hint": [], 
+            "Name": "Illinois", 
+            "Picture": [], 
+            "Prompt": [
+                "Springfield"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Indiana"
+            ], 
+            "Hint": [], 
+            "Name": "Indiana", 
+            "Picture": [], 
+            "Prompt": [
+                "Indianapolis"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Iowa"
+            ], 
+            "Hint": [], 
+            "Name": "Iowa", 
+            "Picture": [], 
+            "Prompt": [
+                "Des Moines"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Kansas"
+            ], 
+            "Hint": [], 
+            "Name": "Kansas", 
+            "Picture": [], 
+            "Prompt": [
+                "Topeka"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Kentucky"
+            ], 
+            "Hint": [], 
+            "Name": "Kentucky", 
+            "Picture": [], 
+            "Prompt": [
+                "Frankfort"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Louisiana"
+            ], 
+            "Hint": [], 
+            "Name": "Louisiana", 
+            "Picture": [], 
+            "Prompt": [
+                "Baton Rouge"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Maine"
+            ], 
+            "Hint": [], 
+            "Name": "Maine", 
+            "Picture": [], 
+            "Prompt": [
+                "Augusta"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Maryland"
+            ], 
+            "Hint": [], 
+            "Name": "Maryland", 
+            "Picture": [], 
+            "Prompt": [
+                "Annapolis"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Massachusetts"
+            ], 
+            "Hint": [], 
+            "Name": "Massachusetts", 
+            "Picture": [], 
+            "Prompt": [
+                "Boston"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Michigan"
+            ], 
+            "Hint": [], 
+            "Name": "Michigan", 
+            "Picture": [], 
+            "Prompt": [
+                "Lansing"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Minnesota"
+            ], 
+            "Hint": [], 
+            "Name": "Minnesota", 
+            "Picture": [], 
+            "Prompt": [
+                "Saint Paul"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Mississippi"
+            ], 
+            "Hint": [], 
+            "Name": "Mississippi", 
+            "Picture": [], 
+            "Prompt": [
+                "Jackson"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Missouri"
+            ], 
+            "Hint": [], 
+            "Name": "Missouri", 
+            "Picture": [], 
+            "Prompt": [
+                "Jefferson City"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Montana"
+            ], 
+            "Hint": [], 
+            "Name": "Montana", 
+            "Picture": [], 
+            "Prompt": [
+                "Helena"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Nebraska"
+            ], 
+            "Hint": [], 
+            "Name": "Nebraska", 
+            "Picture": [], 
+            "Prompt": [
+                "Lincoln"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Nevada"
+            ], 
+            "Hint": [], 
+            "Name": "Nevada", 
+            "Picture": [], 
+            "Prompt": [
+                "Carson City"
+            ]
+        }, 
+        {
+            "Answer": [
+                "New Hampshire"
+            ], 
+            "Hint": [], 
+            "Name": "New Hampshire", 
+            "Picture": [], 
+            "Prompt": [
+                "Concord"
+            ]
+        }, 
+        {
+            "Answer": [
+                "New Jersey"
+            ], 
+            "Hint": [], 
+            "Name": "New Jersey", 
+            "Picture": [], 
+            "Prompt": [
+                "Trenton"
+            ]
+        }, 
+        {
+            "Answer": [
+                "New Mexico"
+            ], 
+            "Hint": [], 
+            "Name": "New Mexico", 
+            "Picture": [], 
+            "Prompt": [
+                "Santa Fe"
+            ]
+        }, 
+        {
+            "Answer": [
+                "New York"
+            ], 
+            "Hint": [], 
+            "Name": "New York", 
+            "Picture": [], 
+            "Prompt": [
+                "Albany"
+            ]
+        }, 
+        {
+            "Answer": [
+                "North Carolina"
+            ], 
+            "Hint": [], 
+            "Name": "North Carolina", 
+            "Picture": [], 
+            "Prompt": [
+                "Raleigh"
+            ]
+        }, 
+        {
+            "Answer": [
+                "North dakota"
+            ], 
+            "Hint": [], 
+            "Name": "North Dakota", 
+            "Picture": [], 
+            "Prompt": [
+                "Bismarck"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Ohio"
+            ], 
+            "Hint": [], 
+            "Name": "Ohio", 
+            "Picture": [], 
+            "Prompt": [
+                "Columbus"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Oklahoma"
+            ], 
+            "Hint": [], 
+            "Name": "Oklahoma", 
+            "Picture": [], 
+            "Prompt": [
+                "Oklahoma City"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Oregon"
+            ], 
+            "Hint": [], 
+            "Name": "Oregon", 
+            "Picture": [], 
+            "Prompt": [
+                "Salem"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Pennsylvania"
+            ], 
+            "Hint": [], 
+            "Name": "Pennsylvania", 
+            "Picture": [], 
+            "Prompt": [
+                "Harrisburg"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Rhode Island"
+            ], 
+            "Hint": [], 
+            "Name": "Rhode Island", 
+            "Picture": [], 
+            "Prompt": [
+                "Providence"
+            ]
+        }, 
+        {
+            "Answer": [
+                "South Carolina"
+            ], 
+            "Hint": [], 
+            "Name": "South Carolina", 
+            "Picture": [], 
+            "Prompt": [
+                "Columbia"
+            ]
+        }, 
+        {
+            "Answer": [
+                "South Dakota"
+            ], 
+            "Hint": [], 
+            "Name": "South Dakota", 
+            "Picture": [], 
+            "Prompt": [
+                "Pierre"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Tennessee"
+            ], 
+            "Hint": [], 
+            "Name": "Tennessee", 
+            "Picture": [], 
+            "Prompt": [
+                "Nashville"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Texas"
+            ], 
+            "Hint": [], 
+            "Name": "Texas", 
+            "Picture": [], 
+            "Prompt": [
+                "Austin"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Utah"
+            ], 
+            "Hint": [], 
+            "Name": "Utah", 
+            "Picture": [], 
+            "Prompt": [
+                "Salt Lake City"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Vermont"
+            ], 
+            "Hint": [], 
+            "Name": "Vermont", 
+            "Picture": [], 
+            "Prompt": [
+                "Montpelier"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Virginia"
+            ], 
+            "Hint": [], 
+            "Name": "Virginia", 
+            "Picture": [], 
+            "Prompt": [
+                "Richmond"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Washington"
+            ], 
+            "Hint": [], 
+            "Name": "Washington", 
+            "Picture": [], 
+            "Prompt": [
+                "Olympia"
+            ]
+        }, 
+        {
+            "Answer": [
+                "West Virginia"
+            ], 
+            "Hint": [], 
+            "Name": "West Virginia", 
+            "Picture": [], 
+            "Prompt": [
+                "Charleston"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Wisconsin"
+            ], 
+            "Hint": [], 
+            "Name": "Wisconsin", 
+            "Picture": [], 
+            "Prompt": [
+                "Madison"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Wyoming"
+            ], 
+            "Hint": [], 
+            "Name": "Wyoming", 
+            "Picture": [], 
+            "Prompt": [
+                "Cheyenne"
+            ]
+        }
+    ]
+}
