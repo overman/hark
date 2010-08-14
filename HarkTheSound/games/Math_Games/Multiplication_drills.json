@@ -1,0 +1,749 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "A classic Hark the Sound guessing game.", 
+    "Name": "Multiplication drills", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "What is the product?", 
+        "Can you name this product?"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "eight"
+            ], 
+            "Hint": [], 
+            "Name": "eight", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 8", 
+                "2 times 4", 
+                "4 times 2", 
+                "8 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eighteen"
+            ], 
+            "Hint": [], 
+            "Name": "eighteen", 
+            "Picture": [], 
+            "Prompt": [
+                "2 times 9", 
+                "3 times 6", 
+                "6 times 3", 
+                "9 times 2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eighty-eight"
+            ], 
+            "Hint": [], 
+            "Name": "eighty-eight", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 8", 
+                "8 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eighty-four"
+            ], 
+            "Hint": [], 
+            "Name": "eighty-four", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 7", 
+                "7 times 12"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eighty-one"
+            ], 
+            "Hint": [], 
+            "Name": "eighty-one", 
+            "Picture": [], 
+            "Prompt": [
+                "9 times 9"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eighty"
+            ], 
+            "Hint": [], 
+            "Name": "eighty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 8", 
+                "8 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "eleven"
+            ], 
+            "Hint": [], 
+            "Name": "eleven", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 11", 
+                "11 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fifteen"
+            ], 
+            "Hint": [], 
+            "Name": "fifteen", 
+            "Picture": [], 
+            "Prompt": [
+                "3 times 5", 
+                "5 times 3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fifty-five"
+            ], 
+            "Hint": [], 
+            "Name": "fifty-five", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 5", 
+                "5 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fifty-four"
+            ], 
+            "Hint": [], 
+            "Name": "fifty-four", 
+            "Picture": [], 
+            "Prompt": [
+                "6 times 9", 
+                "9 times 6"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fifty-six"
+            ], 
+            "Hint": [], 
+            "Name": "fifty-six", 
+            "Picture": [], 
+            "Prompt": [
+                "7 times 8", 
+                "8 times 7"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fifty"
+            ], 
+            "Hint": [], 
+            "Name": "fifty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 5", 
+                "5 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "five"
+            ], 
+            "Hint": [], 
+            "Name": "five", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 5", 
+                "5 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "forty-eight"
+            ], 
+            "Hint": [], 
+            "Name": "forty-eight", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 4", 
+                "4 times 12", 
+                "6 times 8", 
+                "8 times 6"
+            ]
+        }, 
+        {
+            "Answer": [
+                "forty-five"
+            ], 
+            "Hint": [], 
+            "Name": "forty-five", 
+            "Picture": [], 
+            "Prompt": [
+                "5 times 9", 
+                "9 times 5"
+            ]
+        }, 
+        {
+            "Answer": [
+                "forty-four"
+            ], 
+            "Hint": [], 
+            "Name": "forty-four", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 4", 
+                "4 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "forty-two"
+            ], 
+            "Hint": [], 
+            "Name": "forty-two", 
+            "Picture": [], 
+            "Prompt": [
+                "6 times 7", 
+                "7 times 6"
+            ]
+        }, 
+        {
+            "Answer": [
+                "forty"
+            ], 
+            "Hint": [], 
+            "Name": "forty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 4", 
+                "4 times 10", 
+                "5 times 8", 
+                "8 times 5"
+            ]
+        }, 
+        {
+            "Answer": [
+                "four"
+            ], 
+            "Hint": [], 
+            "Name": "four", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 4", 
+                "2 times 2", 
+                "4 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "fourteen"
+            ], 
+            "Hint": [], 
+            "Name": "fourteen", 
+            "Picture": [], 
+            "Prompt": [
+                "2 times 7", 
+                "7 times 2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "nine"
+            ], 
+            "Hint": [], 
+            "Name": "nine", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 9", 
+                "3 times 3", 
+                "9 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "ninety-nine"
+            ], 
+            "Hint": [], 
+            "Name": "ninety-nine", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 9", 
+                "9 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "ninety-six"
+            ], 
+            "Hint": [], 
+            "Name": "ninety-six", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 8", 
+                "8 times 12"
+            ]
+        }, 
+        {
+            "Answer": [
+                "ninety"
+            ], 
+            "Hint": [], 
+            "Name": "ninety", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 9", 
+                "9 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred eight"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred eight", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 9", 
+                "9 times 12"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred forty four"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred forty four", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 12"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred ten"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred ten", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 11", 
+                "11 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred thirty two"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred thirty two", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 12"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred twenty"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred twenty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 12", 
+                "12 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one hundred"
+            ], 
+            "Hint": [], 
+            "Name": "one hundred", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one"
+            ], 
+            "Hint": [], 
+            "Name": "one", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "seven"
+            ], 
+            "Hint": [], 
+            "Name": "seven", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 7", 
+                "7 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "seventy-seven"
+            ], 
+            "Hint": [], 
+            "Name": "seventy-seven", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 7", 
+                "7 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "seventy-two"
+            ], 
+            "Hint": [], 
+            "Name": "seventy-two", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 6", 
+                "6 times 12", 
+                "8 times 9", 
+                "9 times 8"
+            ]
+        }, 
+        {
+            "Answer": [
+                "seventy"
+            ], 
+            "Hint": [], 
+            "Name": "seventy", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 7", 
+                "7 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "six"
+            ], 
+            "Hint": [], 
+            "Name": "six", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 6", 
+                "2 times 3", 
+                "3 times 2", 
+                "6 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "sixteen"
+            ], 
+            "Hint": [], 
+            "Name": "sixteen", 
+            "Picture": [], 
+            "Prompt": [
+                "2 times 8", 
+                "4 times 4", 
+                "8 times 2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "sixty-four"
+            ], 
+            "Hint": [], 
+            "Name": "sixty-four", 
+            "Picture": [], 
+            "Prompt": [
+                "8 times 8"
+            ]
+        }, 
+        {
+            "Answer": [
+                "sixty-six"
+            ], 
+            "Hint": [], 
+            "Name": "sixty-six", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 6", 
+                "6 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "sixty-three"
+            ], 
+            "Hint": [], 
+            "Name": "sixty-three", 
+            "Picture": [], 
+            "Prompt": [
+                "7 times 9", 
+                "9 times 7"
+            ]
+        }, 
+        {
+            "Answer": [
+                "sixty"
+            ], 
+            "Hint": [], 
+            "Name": "sixty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 6", 
+                "12 times 5", 
+                "5 times 12", 
+                "6 times 10"
+            ]
+        }, 
+        {
+            "Answer": [
+                "ten"
+            ], 
+            "Hint": [], 
+            "Name": "ten", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 10", 
+                "10 times 1", 
+                "2 times 5", 
+                "5 times 2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "thirty-five"
+            ], 
+            "Hint": [], 
+            "Name": "thirty-five", 
+            "Picture": [], 
+            "Prompt": [
+                "5 times 7", 
+                "7 times 5"
+            ]
+        }, 
+        {
+            "Answer": [
+                "thirty-six"
+            ], 
+            "Hint": [], 
+            "Name": "thirty-six", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 3", 
+                "3 times 12", 
+                "4 times 9", 
+                "6 times 6", 
+                "9 times 4"
+            ]
+        }, 
+        {
+            "Answer": [
+                "thirty-three"
+            ], 
+            "Hint": [], 
+            "Name": "thirty-three", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 3", 
+                "3 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "thirty-two"
+            ], 
+            "Hint": [], 
+            "Name": "thirty-two", 
+            "Picture": [], 
+            "Prompt": [
+                "4 times 8", 
+                "8 times 4"
+            ]
+        }, 
+        {
+            "Answer": [
+                "thirty"
+            ], 
+            "Hint": [], 
+            "Name": "thirty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 3", 
+                "3 times 10", 
+                "5 times 6", 
+                "6 times 5"
+            ]
+        }, 
+        {
+            "Answer": [
+                "three"
+            ], 
+            "Hint": [], 
+            "Name": "three", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 3", 
+                "3 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twelve"
+            ], 
+            "Hint": [], 
+            "Name": "twelve", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 12", 
+                "12 times 1", 
+                "2 times 6", 
+                "3 times 4", 
+                "4 times 3", 
+                "6 times 2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-eight"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-eight", 
+            "Picture": [], 
+            "Prompt": [
+                "4 times 7", 
+                "7 times 4"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-five"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-five", 
+            "Picture": [], 
+            "Prompt": [
+                "5 times 5"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-four"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-four", 
+            "Picture": [], 
+            "Prompt": [
+                "12 times 2", 
+                "2 times 12", 
+                "3 times 8", 
+                "4 times 6", 
+                "6 times 4", 
+                "8 times 3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-one"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-one", 
+            "Picture": [], 
+            "Prompt": [
+                "3 times 7", 
+                "7 times 3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-seven"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-seven", 
+            "Picture": [], 
+            "Prompt": [
+                "3 times 9", 
+                "9 times 3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty-two"
+            ], 
+            "Hint": [], 
+            "Name": "twenty-two", 
+            "Picture": [], 
+            "Prompt": [
+                "11 times 2", 
+                "2 times 11"
+            ]
+        }, 
+        {
+            "Answer": [
+                "twenty"
+            ], 
+            "Hint": [], 
+            "Name": "twenty", 
+            "Picture": [], 
+            "Prompt": [
+                "10 times 2", 
+                "2 times 10", 
+                "4 times 5", 
+                "5 times 4"
+            ]
+        }, 
+        {
+            "Answer": [
+                "two"
+            ], 
+            "Hint": [], 
+            "Name": "two", 
+            "Picture": [], 
+            "Prompt": [
+                "1 times 2", 
+                "2 times 1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "zero"
+            ], 
+            "Hint": [], 
+            "Name": "zero", 
+            "Picture": [], 
+            "Prompt": [
+                "0 times 1", 
+                "0 times 10", 
+                "0 times 11", 
+                "0 times 12", 
+                "0 times 2", 
+                "0 times 3", 
+                "0 times 4", 
+                "0 times 5", 
+                "0 times 6", 
+                "0 times 7", 
+                "0 times 8", 
+                "0 times 9"
+            ]
+        }
+    ]
+}
