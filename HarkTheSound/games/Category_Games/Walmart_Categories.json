@@ -1,0 +1,865 @@
+{
+    "Categories": [
+        {
+            "Exclusion_Question": [
+                "Which does not belong in arts and crafts?"
+            ], 
+            "Inclusion_Question": [
+                "which item belongs in arts and crafts?"
+            ], 
+            "Name": "arts and crafts", 
+            "Things": [
+                {
+                    "Answer": [
+                        "beads"
+                    ], 
+                    "Hint": [], 
+                    "Name": "beads", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "felt"
+                    ], 
+                    "Hint": [], 
+                    "Name": "felt", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "finger paint"
+                    ], 
+                    "Hint": [], 
+                    "Name": "finger paint", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "pipe stems cleaners"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pipe stem cleaners", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "popsicle sticks"
+                    ], 
+                    "Hint": [], 
+                    "Name": "popsicle sticks", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "ribbon"
+                    ], 
+                    "Hint": [], 
+                    "Name": "ribbon", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "yarn"
+                    ], 
+                    "Hint": [], 
+                    "Name": "yarn", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which item does not belong in automotive?"
+            ], 
+            "Inclusion_Question": [
+                "Which item belongs in automotive?"
+            ], 
+            "Name": "automotive", 
+            "Things": [
+                {
+                    "Answer": [
+                        "car oil"
+                    ], 
+                    "Hint": [], 
+                    "Name": "car oil", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "car stereo"
+                    ], 
+                    "Hint": [], 
+                    "Name": "car stereo", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "floor mats"
+                    ], 
+                    "Hint": [], 
+                    "Name": "floor mats", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "tires"
+                    ], 
+                    "Hint": [], 
+                    "Name": "tires", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "windshiel wiper blades"
+                    ], 
+                    "Hint": [], 
+                    "Name": "windshield wiper blades", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which item does not belong in clothing?"
+            ], 
+            "Inclusion_Question": [
+                "Which belongs in clothing?"
+            ], 
+            "Name": "clothing", 
+            "Things": [
+                {
+                    "Answer": [
+                        "coat"
+                    ], 
+                    "Hint": [], 
+                    "Name": "coat", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "dress"
+                    ], 
+                    "Hint": [], 
+                    "Name": "dress", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "pajamas"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pajamas", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "pants"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pants", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "scarfs"
+                    ], 
+                    "Hint": [], 
+                    "Name": "scarfs", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "shirt"
+                    ], 
+                    "Hint": [], 
+                    "Name": "shirt", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "shorts"
+                    ], 
+                    "Hint": [], 
+                    "Name": "shorts", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "skirt"
+                    ], 
+                    "Hint": [], 
+                    "Name": "skirt", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "sweat shirts"
+                    ], 
+                    "Hint": [], 
+                    "Name": "sweat shirts", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "sweater"
+                    ], 
+                    "Hint": [], 
+                    "Name": "sweater", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "swim suits"
+                    ], 
+                    "Hint": [], 
+                    "Name": "swim suits", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which does not belong in electronics?"
+            ], 
+            "Inclusion_Question": [
+                "Which belongs in electronics?"
+            ], 
+            "Name": "electronics", 
+            "Things": [
+                {
+                    "Answer": [
+                        "cd"
+                    ], 
+                    "Hint": [], 
+                    "Name": "cd", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "DVD"
+                    ], 
+                    "Hint": [], 
+                    "Name": "dvd", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "play station"
+                    ], 
+                    "Hint": [], 
+                    "Name": "play station", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "radio"
+                    ], 
+                    "Hint": [], 
+                    "Name": "radio", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "stereo"
+                    ], 
+                    "Hint": [], 
+                    "Name": "stereo", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "television"
+                    ], 
+                    "Hint": [], 
+                    "Name": "television", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "vcr"
+                    ], 
+                    "Hint": [], 
+                    "Name": "vcr", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "walkman"
+                    ], 
+                    "Hint": [], 
+                    "Name": "walkman", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which does not belong in health and beauty?"
+            ], 
+            "Inclusion_Question": [
+                "which belongs in health and beauty?"
+            ], 
+            "Name": "health and beauty", 
+            "Things": [
+                {
+                    "Answer": [
+                        "brush"
+                    ], 
+                    "Hint": [], 
+                    "Name": "brush", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "conditioner"
+                    ], 
+                    "Hint": [], 
+                    "Name": "conditioner", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "deodorant"
+                    ], 
+                    "Hint": [], 
+                    "Name": "deodorant", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "hand lotion"
+                    ], 
+                    "Hint": [], 
+                    "Name": "hand lotion", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "shampoo"
+                    ], 
+                    "Hint": [], 
+                    "Name": "shampoo", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "soap"
+                    ], 
+                    "Hint": [], 
+                    "Name": "soap", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "toe nail clippers"
+                    ], 
+                    "Hint": [], 
+                    "Name": "toe nail clippers", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "tooth paste"
+                    ], 
+                    "Hint": [], 
+                    "Name": "tooth paste", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which is not jewelry?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these belongs in jewelry?"
+            ], 
+            "Name": "jewlery", 
+            "Things": [
+                {
+                    "Answer": [
+                        "bracelet"
+                    ], 
+                    "Hint": [], 
+                    "Name": "bracelet", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "charm"
+                    ], 
+                    "Hint": [], 
+                    "Name": "charm", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "ear rings"
+                    ], 
+                    "Hint": [], 
+                    "Name": "ear rings", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "necklace"
+                    ], 
+                    "Hint": [], 
+                    "Name": "necklace", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "ring"
+                    ], 
+                    "Hint": [], 
+                    "Name": "ring", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "silver chain"
+                    ], 
+                    "Hint": [], 
+                    "Name": "silver chain", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "watch"
+                    ], 
+                    "Hint": [], 
+                    "Name": "watch", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "which does not belong in lawn and garden?"
+            ], 
+            "Inclusion_Question": [
+                "which belongs in lawn and garden?"
+            ], 
+            "Name": "lawn and garden", 
+            "Things": [
+                {
+                    "Answer": [
+                        "bird bath"
+                    ], 
+                    "Hint": [], 
+                    "Name": "bird bath", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "daisies"
+                    ], 
+                    "Hint": [], 
+                    "Name": "daisies", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "ferns"
+                    ], 
+                    "Hint": [], 
+                    "Name": "ferns", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "fertilizer"
+                    ], 
+                    "Hint": [], 
+                    "Name": "fertilizer", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "grass seed"
+                    ], 
+                    "Hint": [], 
+                    "Name": "grass seed", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "lawn chair"
+                    ], 
+                    "Hint": [], 
+                    "Name": "lawn chair", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "lawn mower"
+                    ], 
+                    "Hint": [], 
+                    "Name": "lawn mower", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "potting soil"
+                    ], 
+                    "Hint": [], 
+                    "Name": "potting soil", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "shovel"
+                    ], 
+                    "Hint": [], 
+                    "Name": "shovel", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "sun dial"
+                    ], 
+                    "Hint": [], 
+                    "Name": "sun dial", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "water hose"
+                    ], 
+                    "Hint": [], 
+                    "Name": "water hose", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "wheel barrow"
+                    ], 
+                    "Hint": [], 
+                    "Name": "wheel barrow", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "which does not belong in pet supplies?"
+            ], 
+            "Inclusion_Question": [
+                "which does belong in pet supplies?"
+            ], 
+            "Name": "pet supplies", 
+            "Things": [
+                {
+                    "Answer": [
+                        "bird feeder"
+                    ], 
+                    "Hint": [], 
+                    "Name": "bird feeder", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "cat litter"
+                    ], 
+                    "Hint": [], 
+                    "Name": "cat litter", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "chew toys"
+                    ], 
+                    "Hint": [], 
+                    "Name": "chew toys", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "collars"
+                    ], 
+                    "Hint": [], 
+                    "Name": "collars", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "dog bed"
+                    ], 
+                    "Hint": [], 
+                    "Name": "dog  bed", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "dog food"
+                    ], 
+                    "Hint": [], 
+                    "Name": "dog food", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "fish food"
+                    ], 
+                    "Hint": [], 
+                    "Name": "fish food", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "leashes"
+                    ], 
+                    "Hint": [], 
+                    "Name": "leashes", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "which does not belong in school supplies?"
+            ], 
+            "Inclusion_Question": [
+                "which belongs in school supplies?"
+            ], 
+            "Name": "school supplies", 
+            "Things": [
+                {
+                    "Answer": [
+                        "crayons"
+                    ], 
+                    "Hint": [], 
+                    "Name": "crayons", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "folder"
+                    ], 
+                    "Hint": [], 
+                    "Name": "folder", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "glue"
+                    ], 
+                    "Hint": [], 
+                    "Name": "glue", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "markers"
+                    ], 
+                    "Hint": [], 
+                    "Name": "markers", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "notebooks"
+                    ], 
+                    "Hint": [], 
+                    "Name": "notebooks", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "paper"
+                    ], 
+                    "Hint": [], 
+                    "Name": "paper", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "pencils"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pencils", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "pens"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pens", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "scissors"
+                    ], 
+                    "Hint": [], 
+                    "Name": "scissors", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "which does not belong in sporting goods?"
+            ], 
+            "Inclusion_Question": [
+                "which does belong in sporting goods?"
+            ], 
+            "Name": "sporting goods", 
+            "Things": [
+                {
+                    "Answer": [
+                        "bar bells"
+                    ], 
+                    "Hint": [], 
+                    "Name": "bar bells", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "baseball bats"
+                    ], 
+                    "Hint": [], 
+                    "Name": "baseball bats", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "camp stove"
+                    ], 
+                    "Hint": [], 
+                    "Name": "camp stove", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "fishing pole"
+                    ], 
+                    "Hint": [], 
+                    "Name": "fishing pole", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "life jackets"
+                    ], 
+                    "Hint": [], 
+                    "Name": "life jackets", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "soccer ball"
+                    ], 
+                    "Hint": [], 
+                    "Name": "soccer ball", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "tent"
+                    ], 
+                    "Hint": [], 
+                    "Name": "tent", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "tread mill"
+                    ], 
+                    "Hint": [], 
+                    "Name": "tread mill", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "water skis"
+                    ], 
+                    "Hint": [], 
+                    "Name": "water skis", 
+                    "Picture": []
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "which does not belong in toys?"
+            ], 
+            "Inclusion_Question": [
+                "which belongs in toys?"
+            ], 
+            "Name": "toys", 
+            "Things": [
+                {
+                    "Answer": [
+                        "Barbie doll"
+                    ], 
+                    "Hint": [], 
+                    "Name": "barbie doll", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "cards"
+                    ], 
+                    "Hint": [], 
+                    "Name": "cards", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "coloring books"
+                    ], 
+                    "Hint": [], 
+                    "Name": "coloring books", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "Match Box cars"
+                    ], 
+                    "Hint": [], 
+                    "Name": "match box cars", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "Monopoly"
+                    ], 
+                    "Hint": [], 
+                    "Name": "monopoly", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "puzzles"
+                    ], 
+                    "Hint": [], 
+                    "Name": "puzzles", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "Spider Man"
+                    ], 
+                    "Hint": [], 
+                    "Name": "spider man", 
+                    "Picture": []
+                }, 
+                {
+                    "Answer": [
+                        "tonka Trucks"
+                    ], 
+                    "Hint": [], 
+                    "Name": "tonka trucks", 
+                    "Picture": []
+                }
+            ]
+        }
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "In this category game you learn about what items belong in the different departments in Walmart.", 
+    "Name": "Walmart Categories", 
+    "Repeat rounds": false
+}
