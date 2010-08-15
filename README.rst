@@ -1,7 +1,9 @@
-Overview
-=============
+===================
+Classic Hark The Sound in the Browser
+===================
 
-Current implementation for running the downloadable version of Hark the Sound in the browser.
+:Author: Robert Overman
+:Description: Current implementation for running equivalent of the downloadable version of Hark the Sound in the browser.
 
 Crude Hierarchy Description
 =============
