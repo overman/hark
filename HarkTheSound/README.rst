@@ -16,7 +16,7 @@ Also in the framework there is a fair amount of code not used in the framework b
 
 The framework listens for options updates which are prompted by the user pressing the submit button in the options menu. The framework publishes the resulting data for the game engine to utilize. 
 
-Othe Notes
+Other Notes
 =============
 
 None of the images or sounds are up here. 
