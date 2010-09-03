@@ -2,8 +2,9 @@ dojo.provide("widgets.namingGameEngine");
 dojo.require("dijit.Dialog");
 dojo.require("dijit._Templated");
 dojo.require("dijit._Widget");
+dojo.require("dojox.timing");
 
-dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
+dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
 
     templateString: '<div><img class ="hidden" id="gameImage" src=""/></div>',
 
@@ -51,7 +52,7 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         }
         else{   //user has specified option preferences
             this._updateOptions(this.hark.optionsData);        
-        }
+        }      
         this.inherited(arguments);
         this.rewardImages = this.hark.rewardImages;
         this._thingsToName = this.gameData.Things;
@@ -62,12 +63,12 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
             "width": 1, 
             "height": 1
         });
-        this.footer = dojo.byId("footer");
         this._betweenRoundPhrases = this.gameData.Between_Rounds;
         this._currentChoices = [];
         this._currentChoiceIndex = 0;
         this.promptNode = dojo.byId("promptBox");
-        this.randomThings = dojo.clone(this._thingsToName);
+        this.randomThings = dojo.map(this._thingsToName, function(item) {return item;}); //shallow copy
+        this._randomize(this.randomThings); //so now it is actually "random"
         this._randomize(this.randomThings);
         this._currentThingIndex = 0; //index of this.randomThings
         this._possibleQuestions = this.gameData.Question;
@@ -158,9 +159,9 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
     
     //  picks one of the available questions and asks or plays it    
     askQuestion: function() {
-        var clone = dojo.clone(this._possibleQuestions); 
-        this._randomize(clone);
-        var toAsk = clone.pop();
+        var shallowCopy = dojo.map(this._possibleQuestions, function(item) {return item;}); 
+        this._randomize(shallowCopy);
+        var toAsk = shallowCopy.pop();
         var def = this.sayOrPlay(toAsk);
         def.callAfter( dojo.hitch(this, function() {
             this.playThingPrompt();
@@ -170,9 +171,9 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
     //  picks a random thing and plays its prompt
    playThingPrompt: function() {
         this._currentThing = this._currentChoices[this._correctChoiceIndex];
-        var clone = dojo.clone(this._currentThing.Prompt);
-        this._randomize(clone);
-        var toSay = clone.pop();
+        var shallowCopy = dojo.map(this._currentThing.Prompt, function(item){return item;});
+        this._randomize(shallowCopy);
+        var toSay = shallowCopy.pop();
         var def = this.sayOrPlay(toSay);
         def.callBefore(dojo.hitch(this, function() {
             this.promptNode.innerHTML = "Prompt: "+this.currentPrompt;
@@ -216,12 +217,12 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         var index2 = 0;
         this._currentChoices = [];
         while(index2 < (this._choicesPerRound - 1)) { //no its not an off by 1 error
-            this._currentChoices[index2] = dojo.clone(this.randomThings[possibleIndices[index2]]);
+            this._currentChoices[index2] = this.randomThings[possibleIndices[index2]];
             index2++;
         }
         this._currentChoices[(this._choicesPerRound-1)] = this.randomThings[this._currentThingIndex];
         this._randomize(this._currentChoices);
-        this._choicesRemaining = dojo.clone(this._currentChoices);
+        this._choicesRemaining = dojo.map(this._currentChoices, function(item){return item;});
         this._correctChoiceIndex = this._findCorrectAnswerIndex(this._currentChoices, this.randomThings[this._currentThingIndex].Name);
         this._choicesRemaining.splice(this._correctChoiceIndex, 1); //because indices will be the same for remaining and current
     },
@@ -253,7 +254,7 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
 
     //  to do if user has chosen to pair answer with prompts on each choice selection    
     _pairSequence: function() {
-        var toSay = dojo.clone(this._currentChoices[this._currentChoiceIndex].Prompt);
+        var toSay = dojo.map(this._currentChoices[this._currentChoiceIndex].Prompt, function(item){return item;});
         this._randomize(toSay);
         this.sayOrPlay(toSay.pop());
     },
@@ -281,7 +282,8 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
     //  update nodes and present audio 
     _updateDescription: function() {
         //image
-        var images = dojo.clone(this._currentChoices[this._currentChoiceIndex].Picture);
+        console.log("Update Description");
+        var images = dojo.map(this._currentChoices[this._currentChoiceIndex].Picture, function(item) {return item;});
         if (images.length >= 1) {
             this._randomize(images);
             var imageData = images.pop();
@@ -289,9 +291,9 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         }
         //text
         this.choiceNode.innerHTML = "Choice: " + String(this._currentChoices[this._currentChoiceIndex].Name);
-        var clone = dojo.clone(this._currentChoices[this._currentChoiceIndex].Answer);
-        this._randomize(clone);
-        var toSay = clone.pop();
+        var shallowCopy = dojo.map(this._currentChoices[this._currentChoiceIndex].Answer, function(item){return item;});
+        this._randomize(shallowCopy);
+        var toSay = shallowCopy.pop();
         var defReturn = this.sayOrPlay(toSay);
         return defReturn;        
     },
@@ -344,7 +346,7 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         var def = this.sayOrPlay(randomResponse);
         def.callAfter(dojo.hitch(this, function() {
             if (doHint) {
-                    var hints = dojo.clone(this._currentChoices[this._correctChoiceIndex].Hint);
+                    var hints = dojo.map(this._currentChoices[this._correctChoiceIndex].Hint, function(item) {return item;});
                     this._randomize(hints);
                     var hint = hints.pop();
                     var def = this.sayOrPlay("Hint: " + hint);
@@ -391,6 +393,7 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         //now change image source
         dojo.removeClass("gameImage", "hidden");
         this.gameImage.src = this.currentImageData.url;
+        console.log("Url: ", this.currentImageData.url);
         
     },
     
@@ -398,8 +401,7 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
     findVisibleImageArea: function () {
         this.availableWidth = dojo.global.innerWidth - 25;   //25 is for padding and div's
         var rewardTopPosition = this.hark.getElementTopPosition(this.gameImage);
-        var footerTopPosition = this.hark.getElementTopPosition(this.footer) + 5;
-        this.availableHeight = footerTopPosition - rewardTopPosition - 25 ; //25 is for padding
+        this.availableHeight = dojo.global.innerHeight - rewardTopPosition - 25 ; //25 is for padding
     },
     
     //  works correctly if an image is already loaded and has established style height/width
@@ -484,10 +486,6 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
         if (this._keyHasGoneUp) {
             this._keyHasGoneUp = false;
             if (this._waitingForResponse) {
-                this._waitingForResponse = false;
-                //wait for timeout to accept response
-                setTimeout(dojo.hitch(this, function(){this._waitingForResponse = true;}), this.keyDelay*1000);
-
                 if(this.hark._keyIsEscape(evt)) {   //destroy widget
                     this.endGame();
                 }
@@ -530,6 +528,13 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
                 this._audio.play({url: "Sounds/TooEarlyClick", channel : "second"});
             }
         }
+        else {
+            if (this.hark._keyIsDownArrow(evt) || this.hark._keyIsLeftArrow(evt) || this.hark._keyIsRightArrow(evt) || this.hark._keyIsUpArrow(evt)) {
+                evt.preventDefault();
+            }
+            this._audio.stop({channel: "second"});  //else tooEarlySounds will queue up hit hit fast
+            this._audio.play({url: "Sounds/TooEarlyClick", channel : "second"});
+        }
     },
     
     //  programmatically creates, shows, and return a dijit.dialog 
@@ -544,7 +549,15 @@ dojo.declare("widgets.namingGameEngine", [dijit._Widget, dijit._Templated], {
     },
     
     _removeKeyDownFlag: function() {
-        this._keyHasGoneUp = true; 
+        if (this.keyDelayTimer && this.keyDelayTimer.isRunning){} //do nothing
+        else{
+            this.keyDelayTimer = new dojox.timing.Timer(this.keyDelay*1000);
+            this.keyDelayTimer.onTick = dojo.hitch(this, function() {
+                this.keyDelayTimer.stop(); //prevent from running again.
+                this._keyHasGoneUp = true;
+            });
+            this.keyDelayTimer.start();
+        }
 	},
 
 

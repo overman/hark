@@ -3,107 +3,114 @@
         
     "Games": [
         { 
+            "url": "HarkTheSound/#Category-Walmart_Categories",
             "Type": "Category",
             "Name": "Walmart Categories",
             "Description": "Walmart Categories: in this category game you learn about what items belong in the different departments in Walmart.",
-            "GameDataUrl": "games/Category_Games/Walmart_Categories.json"
         },
         { 
+            "url": "HarkTheSound/#Category-Learn_About_Food_Groups",
             "Type": "Category",
             "Name": "Learn About Food Groups",
             "Description": "Learn About Food Groups: in this game you can learn about the different food groups, such as fruits, vegetables, breads, meats, and dairy.",
-            "GameDataUrl": "games/Category_Games/Learn_About_Food_Groups.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Musical_Instruments",
             "Type": "Naming",
-            "Name": "Name That Musical Instrument",
+            "Name": "Musical Instruments",
             "Description": "Name That Musical Instrument: try to guess the instrument from the sound it makes.",
-            "GameDataUrl": "games/Naming_Games/Name_That_Musical_Instrument.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Name_That_Animal",
             "Type": "Naming",
             "Name": "Name That Animal",
             "Description": "Name That Animal: a classic Hark the Sound guessing game.",
-            "GameDataUrl": "games/Naming_Games/Name_That_Animal.json"
         },
         {
+            "url": "HarkTheSound/#Naming-Name_That_State_By_Capital",
             "Type": "Naming",
-            "Name": "Name That Capital's State",
+            "Name": "Name That State By Capital",
             "Description": "Name That Capital's State: how well do you know the capitals of these states?",
-            "GameDataUrl": "games/Naming_Games/Name_That_Capital's_State.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Name_That_Color",
             "Type": "Naming",
             "Name": "Name That Color",
             "Description": "Name That Color: attempt to match common objects with their typical colors.",
-            "GameDataUrl": "games/Naming_Games/Name_That_Color.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Name_That_Holiday",
             "Type": "Naming",
             "Name": "Name That Holiday",
             "Description": "Name That Holiday: match these prompts with the corresponding holiday.",
-            "GameDataUrl": "games/Naming_Games/Name_That_Holiday.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Name_That_Sound",
             "Type": "Naming",
             "Name": "Name That Sound",
             "Description": "Name That Sound: identify environmental sounds.",
-            "GameDataUrl": "games/Naming_Games/Name_That_Sound.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-Spanish_Words",
             "Type": "Naming",
             "Name": "Spanish Words",
             "Description": "Spanish Words: do you know the translation of these Spanish words into English?",
-            "GameDataUrl": "games/Naming_Games/Spanish_Words.json"
         },
         { 
+            "url": "HarkTheSound/#Naming-State_Nick_Names",
             "Type": "Naming",
             "Name": "State Nick Names",
             "Description": "State Nick Names: match the state with its nick name.",
-            "GameDataUrl": "games/Naming_Games/State_Nick_Names.json"
         },
         { 
+            "url": "HarkTheSound/#Math-Multiplication_Drills",
             "Type": "Math",
-            "Name": "Multiplication drills",
+            "Name": "Multiplication Drills",
             "Description": "Fun with addition",
-            "GameDataUrl": "games/Math_Games/Multiplication_drills.json"
         },
         { 
+            "url": "HarkTheSound/#Math-Addition_1_Through_5",
             "Type": "Math",
-            "Name": "Addition 1 through 5",
+            "Name": "Addition 1 Through 5",
             "Description": "Fun with addition",
-            "GameDataUrl": "games/Math_Games/Addition_1_through_5.json"
         },
         { 
+            "url": "HarkTheSound/#Math-Addition_Easy_6_Through_10",
             "Type": "Math",
-            "Name": "Addition easy 6 through 10",
+            "Name": "Addition Easy 6 Through 10",
             "Description": "More fun with addition",
-            "GameDataUrl": "games/Math_Games/Addition_easy_6_through_10.json"
         },
         { 
+            "url": "HarkTheSound/#Math-Addition_Hard_6_Through_10",
             "Type": "Math",
-            "Name": "Addition hard 6 through 10",
+            "Name": "Addition Hard 6 Through 10",
             "Description": "More challenging addition",
-            "GameDataUrl": "games/Math_Games/Addition_hard_6_through_10.json"
         },
         { 
+            "url": "HarkTheSound/#Math-Counting",
             "Type": "Math",
             "Name": "Counting",
             "Description": "How good are you at counting?",
-            "GameDataUrl": "games/Math_Games/Counting.json"
         },
         { 
+            "url": "HarkTheSound/#Braille-Braille_Letters",
             "Type": "Braille",
-            "Name": "Braille letters",
+            "Name": "Braille Letters",
             "Description": "Identify Braille letters given their dots.",
-            "GameDataUrl": "games/Braille_Games/Braille_letters.json"
         },
         { 
+            "url": "HarkTheSound/#Braille-Braille_Whole_Word_Contractions",
             "Type": "Braille",
-            "Name": "Braille whole word contractions",
+            "Name": "Braille Whole Word Contractions",
             "Description": "Identify Braille whole word contractions from their dots.",
-            "GameDataUrl": "games/Braille_Games/Braille_whole_word_contractions.json"
         },
+        { 
+            "url": "HarkTheSound/#Reaction-Coins_And_Barrels",
+            "Type": "Reaction",
+            "Name": "Coins And Barrels",
+            "Description": "Collect as many coins as possible while avoiding barrels.",
+        },
+
     ]
 }
 

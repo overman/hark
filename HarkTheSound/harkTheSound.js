@@ -2,7 +2,8 @@ dojo.provide('harkTheSound');
 dojo.require('dojo.parser');
 dojo.require('widgets.namingGameEngine');
 dojo.require('widgets.categoryGameEngine');
-dojo.require("dojo.hash");
+dojo.require('widgets.reactionGameEngine');
+dojo.require('dojo.hash');
 
 dojo.declare('harkTheSound', null, {
     constructor: function() {
@@ -21,9 +22,9 @@ dojo.declare('harkTheSound', null, {
         }));
         dojo.subscribe("/dojo/hashchange", this, "_handleHash");
         
-        var optionsFormDlg = dijit.byId("formDialog");
+        //var optionsFormDlg = dijit.byId("formDialog");
         //set up to return JSON of options on submit
-        optionsFormDlg.execute = dojo.hitch(this, function() {
+        /*optionsFormDlg.execute = dojo.hitch(this, function() {
             this.optionsData = dojo.toJson(arguments[0], true);
             //deserialize incoming data
             var dataObj = dojox.json.ref.fromJson(this.optionsData);
@@ -31,13 +32,11 @@ dojo.declare('harkTheSound', null, {
             this.audio.setProperty({name: 'volume', value : volume, immediate: true});
             dojo.publish("audioVolume", [volume]); //let all audio instances and channels know 
             this._optionsUpdate();
-        });
+        });*/
         var audioDef = uow.getAudio({defaultCaching: true});    //get JSonic
         audioDef.addCallback(dojo.hitch(this, function(audio) { 
-            //dojo.connect(dojo.global, 'onkeydown', this, '_analyzeKey'); -- for the old architecture
-            //dojo.connect(dojo.global, 'onkeyup', this, '_removeKeyDownFlag');
             this.audio = audio;
-            dojo.connect(dijit.byId("optionsButton"), "onClick", optionsFormDlg, "show"); //volume change possible
+            //dojo.connect(dijit.byId("optionsButton"), "onClick", optionsFormDlg, "show"); //volume change possible
         }));
         var rewardImageRequest = {
             url : "images/rewards/imageIndex.json",
@@ -61,67 +60,6 @@ dojo.declare('harkTheSound', null, {
             loadingDialog._alreadyInitialized = true;   //putting here does not assure anything!!!
             loadingDialog.hide();
         }));
-        this._buildHomePageGames();
-    },
-
-    //  gets the hash for games in the HomePageGames.json
-    //  soon to be taken over by new architecture 
-    _buildHomePageGames: function() {
-        //get game list data -- right now sepearate file for games that go on the home page
-        var gameRequest = {
-            url : "games/HomePageGames.json",
-            handleAs : 'json',
-            preventCache: true,
-            error: function(error) {console.log(error);}
-        };
-        var dataDef = dojo.xhrGet(gameRequest);
-        dataDef.addCallback(dojo.hitch(this, function(data) { 
-            this.gameData = data;
-            var homeGames = this.gameData.Games;
-            var homeGameHashes = [];
-            //replace spaces in name with underscore for sticking in address bar
-            dojo.forEach(homeGames, dojo.hitch(this, function(game) {
-                var nameS = game.Name;
-                var characters = nameS.split("");
-                //swap spaces with underscore
-                dojo.forEach(characters, function(character, index) {
-                    if (character == " ") {
-                        characters[index] = "_";
-                    }
-                });
-                var nameU = "";
-                dojo.forEach(characters, function(character){
-                    nameU += character;
-                });
-                var hashedForm = game.Type + "-" + nameU;
-                //homeGameHashes contains the hash for each game
-                homeGameHashes.push(hashedForm);
-            }));
-            this.placeHomePageGames(homeGameHashes);
-        }));
-    },
-    
-    placeHomePageGames: function(hashes) {
-        //build 4*5 table and fill in as many games as possible
-        var table = dojo.create("table", { id: "gameTable", border: "1"}, "gameGoesHere", "before");
-        var endTable = false;
-        for (var index=0;index<=3;index++) {
-            var row = dojo.create("tr", null, table);
-            dojo.forEach([1,2,3,4,5], dojo.hitch(this, function(number) {
-                var link = hashes.pop();   
-                if (link) {                     
-                    var data = dojo.create("td",{style :{padding: "5px"}}, row);
-                    dojo.create("a", { innerHTML: link, href: "#"+link }, data);
-                }
-                else{   //no more games, fill out row
-                    var endTable = true;
-                    dojo.create("td",null, row);
-                }
-            }));
-            if(endTable) {
-               break;
-            }
-        }
     },
     
     //decides what to do with a hash    
@@ -158,16 +96,6 @@ dojo.declare('harkTheSound', null, {
     _optionsUpdate: function () { 
         dojo.publish("optionsUpdate", [this.optionsData]);
     },
-    
-
-    //  for old architecture, updating informative nodes and audio. 
-    updateDescription: function() {
-        this.audio.stop();
-        this.instructionNode.innerHTML = this.currentDescription;
-        this.audio.say({text: this.currentDescription}).callBefore(dojo.hitch(this, function() {
-            this._waitingForResponse = true;
-        }));;
-    },
 
     //  for moving up from a game selection to game choices or from game choices to game types.
     //  no longer used directly by the user.    
@@ -189,34 +117,30 @@ dojo.declare('harkTheSound', null, {
     
     //  hash validity covered earlier. Loads game based on hash
     loadGame: function(hash) {
-        //--OLD SETUP
-        //var split = hash.split("-");
-        //var type = split[0];
-        //var nameU = split[1];
-        //var characters = nameU.split("");
-        ////remove underscores
-        //dojo.forEach(characters, function( character, index) {
-        //    if (character == "_") {
-        //        characters[index] = " ";
-        //    }
-        //});
-        //var nameS = "";
-        //dojo.forEach(characters, function(character){
-        //    nameS += character;
-        //});
         var split = hash.split("-");
-        console.log(split);
-        this.initializeWidgetGame([split[0], split[1]]);
+        var type = split[0];
+        var nameU = split[1];
+        var characters = nameU.split("");
+        //remove underscores
+        dojo.forEach(characters, function( character, index) {
+            if (character == "_") {
+                characters[index] = " ";
+            }
+        });
+        var nameS = "";
+        dojo.forEach(characters, function(character){
+            nameS += character;
+        });
+        this.initializeWidgetGame([type, nameS]);
     },     
     
-    //  initialize game. gameData is a array of length 2. gameData[0] is type gameData[1] is game name
+    //  initialize game. gameData is a array of length 2. gameData[0] is type gameData[1] is game name.
     //  the type/name issue will be made cleaner with newer architecture
     initializeWidgetGame: function(gameData) {
         //this.audio.stop();
         //hook up channel for exit
         var gameHandle = dojo.subscribe("gameExit", dojo.hitch(this, function(message){
             if (message == "widgetDestroyed") {
-                dojo.removeClass("gameTable", "hidden");
                 this.gameInProgress = false;
                 this._waitingForResponse = true;
                 if (!this.currentlyHashing) { //don't call if hashing
@@ -224,86 +148,44 @@ dojo.declare('harkTheSound', null, {
                 }
                 dojo.unsubscribe(gameHandle);
             }
-        }));
-        var urlString = "games/" + gameData[0] + "_Games/" + gameData[1] + ".json"
-        console.log("Path: ", urlString);
-        var request = {
-            url : urlString,
-            handleAs : 'json',
-            preventCache: true,
-            error: function(error) {console.log(error);}
-        };
-        var request = dojo.xhrGet(request);
-        request.addCallback(dojo.hitch(this, function(data) { 
-            //hide the list of games
-            dojo.addClass("gameTable", "hidden");
-
-            //once again, this will be cleaned up with new architecture
-            if ((gameData[0] == "Naming")||(gameData[0] == "Math")||(gameData[0] == "Braille")) {
-                this.currentGameWidget = new widgets.namingGameEngine({gameData: data, hark: this}, 'gameGoesHere');
-            }
-            else if (gameData[0] == "Category") {
-                this.currentGameWidget = new widgets.categoryGameEngine({gameData: data, hark: this}, 'gameGoesHere');
-            }
-        }));
+        }));    
+        var collectionName = gameData[0] + "Games"; //gameData[0] is the type
+        var def = uow.getDatabase({
+          database: 'harkGames', 
+          collection : collectionName, 
+          mode: 'r'
+        });
+        def.then(dojo.hitch(this, function(db) {
+            var name = gameData[1];
+            var fetch = db.fetch({ 
+                query: {"Name": name}, 
+                onComplete: dojo.hitch(this, function(results) {
+                    this.finishWidgetBuild(results[0], gameData[0]); //gameData[0] is the type
+                }) 
+            });
+        }));   
+    }, 
+    
+    /*
+        moved out to control when called
+    */
+    finishWidgetBuild: function(data, type) {
+        switch(type){
+        case "Naming":
+        case "Math":
+        case "Braille":
+            this.currentGameWidget = new widgets.namingGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            break;
+        case "Category":
+            this.currentGameWidget = new widgets.categoryGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            break;
+        case "Reaction":
+            this.currentGameWidget = new widgets.reactionGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            break;
+        }
         this._waitingForResponse = false;
         this.gameInProgress = true;
-    },
-      
-    //  old architecture for moving through game options or game types
-    _moveSequence: function(evt) {
-        evt.preventDefault();
-        //increment current choice index then read
-        this._incrementIndex();
-        this.updateDescription();
-    },
-    
-    //  old architecture for selecting a game or game type        
-    _chooseSequence: function(evt) {
-        evt.preventDefault();
-        this._waitingForResponse = false;
-        this.descend();
-    },
-    
-    //  analyzes user input
-    _analyzeKey: function(evt){	//checks keyStrokes
-        if (this.gameInProgress) {}
-        else if (this._keyHasGoneUp) {
-            this._keyHasGoneUp = false;
-            if (this._waitingForResponse) {
-                    if(this. _keyIsEscape(evt)) {   //destroy widget
-                        this.ascend();
-                    }
-                    //never combine the apparently similar if...then statements. precedence of order matters
-                    else if (this._isSwitch(this.moverSwitch, evt)) { 
-                        this._moveSequence(evt);
-                    }
-                    else if (this._isSwitch(this.chooserSwitch, evt)) {
-                        this._chooseSequence(evt);
-                    }   
-                    else if (this._keyIsDownArrow(evt)) {
-                        evt.preventDefault();
-                        this.updateDescription();
-                    }
-                    else if (this._keyIsLeftArrow(evt)){ //then attempted to move
-                        evt.preventDefault();
-                        //increment current choice index then read
-                        this._decrementIndex();
-                        this.updateDescription();
-                    }
-                    else if (this._keyIsRightArrow(evt)) { //then attempted to move
-                        this._moveSequence(evt);
-                    }
-                    else if (this._keyIsUpArrow(evt)) { //descend
-                        this._chooseSequence(evt);
-                    }
-            }
-            else { //play a too early click
-                this.audio.stop({channel: "second"});  //else tooEarlySounds will queue up hit hit fast
-                this.audio.play({url: "Sounds/TooEarlyClick", channel : "second"});
-            }
-        }
-    },
+    }, 
     
     //  !NOTE!
     //  all "key" functions below used by the game engine widgets. Here as a halfway point to being put on uow???
@@ -377,12 +259,7 @@ dojo.declare('harkTheSound', null, {
         }
         return y;
     },
-     
-    //  for controlling key repeats
-    _removeKeyDownFlag: function() {
-        this._keyHasGoneUp = true; 
-	},
-    
+
     //  programmatically creates, shows, and return a dijit.dialog 
     _showDialog: function(theTitle, text) {
         var d = new dijit.Dialog({

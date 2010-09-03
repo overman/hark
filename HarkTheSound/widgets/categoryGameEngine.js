@@ -3,6 +3,8 @@ dojo.require("dijit._Templated");
 dojo.require("dijit._Widget");
 dojo.provide("widgets.categoryGameEngine");
 dojo.require("dojox.json.ref");
+dojo.require("dojox.timing");
+
  
 //set unused checkboxes etc to disabled
 
@@ -69,7 +71,6 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
             "width": 1, 
             "height": 1
         });
-        this.footer = dojo.byId("footer");
         this._randomize(this._categories);  //randomize the contents of the categories
         this.rewardImages = this.hark.rewardImages;
         this.connect(dojo.global, 'onresize', 'resizeGameImage');
@@ -196,7 +197,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     // this._categories[this._categoreiesIndex]. 
     // @return the array
     _buildExclusiveChoices: function() {
-        var thingsInCurrentCategory = dojo.clone(this._categories[this._categoriesIndex].Things);
+        var thingsInCurrentCategory = dojo.map(this._categories[this._categoriesIndex].Things, function(item) {return item;});
         this._randomize(thingsInCurrentCategory); //because we are just going to pop things off later
         var choices = [];
         var thingIndices = 0;
@@ -227,7 +228,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     // picks 1 thing from this._categories[this._categoreiesIndex] and rest from other categories
     // @return the array
     _buildInclusiveChoices: function() { 
-        var thingsInCurrentCategory = dojo.clone(this._categories[this._categoriesIndex].Things);
+        var thingsInCurrentCategory = dojo.map(this._categories[this._categoriesIndex].Things, function(item){return item;});
         this._randomize(thingsInCurrentCategory); //because we are just going to pop things off later
         
         var choices = [];
@@ -286,15 +287,15 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
         //note that Exclusion_Question & Inclusion_Question are arrays
         if (this._questionType == null) {console.log("Question Type was never set.")}
         else if (this._questionType == "exclusive") {
-            var clone = dojo.clone(this._categories[this._categoriesIndex].Exclusion_Question);
-            this._randomize(clone);
-            var question = clone.pop();
+            var shallowCopy = dojo.map(this._categories[this._categoriesIndex].Exclusion_Question, function(item) {return item;});
+            this._randomize(shallowCopy);
+            var question = shallowCopy.pop();
             this._currentQuestion = question;
         }
         else if (this._questionType == "inclusive") {
-            var clone = dojo.clone(this._categories[this._categoriesIndex].Inclusion_Question);
-            this._randomize(clone);
-            var question = clone.pop();
+            var shallowCopy = dojo.map(this._categories[this._categoriesIndex].Inclusion_Question, function(item) {return item;});
+            this._randomize(shallowCopy);
+            var question = shallowCopy.pop();
             this._currentQuestion = question;
         }
         else { console.log("New Question type added that hasn't been accounted for!!!");}
@@ -318,7 +319,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     //  reads off the answer choice of this._questionChoiceIndex
     _updateDescription: function() {
         this._audio.stop();
-        var images = dojo.clone(this._answerChoices[this._questionChoiceIndex].Picture);
+        var images = dojo.map(this._answerChoices[this._questionChoiceIndex].Picture, function(item){return item;});
         if (images.length >= 1 ){
             this._randomize(images);
             var imageData = images.pop();
@@ -368,10 +369,6 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
         if (this._keyHasGoneUp) {
             this._keyHasGoneUp = false;
             if (this._waitingForResponse) {
-                this._waitingForResponse = false;
-                //wait for timeout to accept response
-                setTimeout(dojo.hitch(this, function(){this._waitingForResponse = true;}), this.keyDelay*1000);
-
                 if(this.hark._keyIsEscape(evt)) {   //destroy widget
                     this.endGame();
                 }
@@ -409,11 +406,19 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
                 this._audio.play({url: "Sounds/TooEarlyClick", channel : "second"});
             }
         }
+        else {
+            if (this.hark._keyIsDownArrow(evt) || this.hark._keyIsLeftArrow(evt) || this.hark._keyIsRightArrow(evt) || this.hark._keyIsUpArrow(evt)) {
+                evt.preventDefault();
+            }
+            this._audio.stop({channel: "second"});  //else tooEarlySounds will queue up hit hit fast
+            this._audio.play({url: "Sounds/TooEarlyClick", channel : "second"});
+        }
     },
     
     //  used for changing game Image. resizing is done in this.resizeGameImage. This is for getting
     //  the proper aspect ratio upon insertion of a new image src    
     _changeGameImage: function(imageData) {
+        console.log("Changing Image");
         this.currentImageData = imageData;
         this.findVisibleImageArea();
         //get rid of current image or else you will see it size to next images' dimensions
@@ -444,9 +449,9 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
             this.gameImage.style.height = "auto";
         }
         //now change image source
+        console.log("Avail Width: ", this.availableWidth, "Avail Height: ", this.availableHeight);
         dojo.removeClass("gameImage", "hidden");
-        this.gameImage.src = this.currentImageData.url;
-        
+        this.gameImage.src = this.currentImageData.url;       
         
     },
     
@@ -454,8 +459,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     findVisibleImageArea: function () {
         this.availableWidth = dojo.global.innerWidth - 25;   //25 is for padding and div's
         var rewardTopPosition = this.hark.getElementTopPosition(this.gameImage);
-        var footerTopPosition = this.hark.getElementTopPosition(this.footer) + 5;
-        this.availableHeight = footerTopPosition - rewardTopPosition - 25 ; //25 is for padding
+        this.availableHeight = dojo.global.innerHeight - rewardTopPosition - 25 ; //25 is for padding
         //console.log("gameNode: ", this.hark.getElementTopPosition(dojo.byId("gameGoesHere")));
     },
     
@@ -522,7 +526,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
         this._audio.stop();
         this._audio.say({text: randomResponse}).callAfter(dojo.hitch(this, function() {
             if (doHint) {
-                    var hints = dojo.clone(this.correctThing.Hint);
+                    var hints = dojo.map(this.correctThing.Hint, function(item){return item;});
                     this._randomize(hints);
                     var hint = hints.pop();
                     var def = this.sayOrPlay("Hint: " + hint);
@@ -590,6 +594,14 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     },
     
     _removeKeyDownFlag: function() {
-        this._keyHasGoneUp = true; 
+        if (this.keyDelayTimer && this.keyDelayTimer.isRunning){} //do nothing
+        else{
+            this.keyDelayTimer = new dojox.timing.Timer(this.keyDelay*1000);
+            this.keyDelayTimer.onTick = dojo.hitch(this, function() {
+                this.keyDelayTimer.stop(); //prevent from running again.
+                this._keyHasGoneUp = true;
+            });
+            this.keyDelayTimer.start();
+        }
 	},
 });

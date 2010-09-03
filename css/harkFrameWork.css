@@ -11,23 +11,8 @@ h1 {
     text-align: center;
 }
 
-#footerTable {
+#headerTable {
     width: 100%;
-}
-
-.left {
-    text-align:left;
-}
-
-.center {
-    text-align:center;
-}
-
-.right {
-    text-align:right;
-}
-.smallSpinner {
-    width: 60px;
 }
 
 .hidden {
