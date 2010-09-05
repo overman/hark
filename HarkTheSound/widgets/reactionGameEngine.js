@@ -8,7 +8,6 @@ dojo.require("dojo.cache");
 
 dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
 
-    //please, please, pull me out and use dojo.cache with a template
     templateString: dojo.cache("HarkTheSound/widgets", "templates/reactionGameEngine.html"),
 
     widgetsInTemplate: true,
