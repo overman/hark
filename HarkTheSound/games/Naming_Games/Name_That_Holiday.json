@@ -1,0 +1,118 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "A classic Hark the Sound guessing game.", 
+    "Name": "Name that holiday", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "What is this holiday?"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "Christmas"
+            ], 
+            "Hint": [], 
+            "Name": "Christmas", 
+            "Picture": [], 
+            "Prompt": [
+                "Red and green are special colors.", 
+                "This holiday has pine trees and lights.", 
+                "Santa visits good boys and girls."
+            ]
+        }, 
+        {
+            "Answer": [
+                "Easter"
+            ], 
+            "Hint": [], 
+            "Name": "Easter", 
+            "Picture": [], 
+            "Prompt": [
+                "Pink and yellow are favorite colors.", 
+                "Eggs, baskets, and bunnies are part of this holiday."
+            ]
+        }, 
+        {
+            "Answer": [
+                "Fourth of July"
+            ], 
+            "Hint": [], 
+            "Name": "Fourth of July", 
+            "Picture": [], 
+            "Prompt": [
+                "Red, white and blue are special colors.", 
+                "People celebrate freedom during this holiday.", 
+                "Fireworks and flags are part of this holiday tradition."
+            ]
+        }, 
+        {
+            "Answer": [
+                "Halloween"
+            ], 
+            "Hint": [], 
+            "Name": "Halloween", 
+            "Picture": [], 
+            "Prompt": [
+                "Orange and black are favorite colors.\n", 
+                "Witches and ghosts are part of this spooky holiday.", 
+                "Carving pumpkins and dressing up are favorite activities on this holiday."
+            ]
+        }, 
+        {
+            "Answer": [
+                "New Year's"
+            ], 
+            "Hint": [], 
+            "Name": "New Year's", 
+            "Picture": [], 
+            "Prompt": [
+                "Gold and silver are special colors.", 
+                "Midnight, fireworks and blowing horns are part of this holiday.", 
+                "This holiday begins a ?"
+            ]
+        }, 
+        {
+            "Answer": [
+                "Saint Patrick's Day"
+            ], 
+            "Hint": [], 
+            "Name": "Saint Patrick's Day", 
+            "Picture": [], 
+            "Prompt": [
+                "Green is a special color.", 
+                "Irish people first celebrated this holiday.", 
+                "Lepracauns, fourth leaf clovers and a pot of gold are part of this holiday."
+            ]
+        }, 
+        {
+            "Answer": [
+                "Thanksgiving"
+            ], 
+            "Hint": [], 
+            "Name": "Thanksgiving", 
+            "Picture": [], 
+            "Prompt": [
+                "Brown is a special color during this holiday.", 
+                "Pilgrims and Indians started this holiday.", 
+                "People celebrate their blessings during this holiday."
+            ]
+        }, 
+        {
+            "Answer": [
+                "Valentine's Day"
+            ], 
+            "Hint": [], 
+            "Name": "Valentine's Day", 
+            "Picture": [], 
+            "Prompt": [
+                "Red and pink are favorite colors.", 
+                "We celebrate people we love during this holiday.", 
+                "Hearts and candy are part of this holiday tradition."
+            ]
+        }
+    ]
+}

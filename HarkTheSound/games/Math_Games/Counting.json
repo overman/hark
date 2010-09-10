@@ -1,0 +1,154 @@
+{
+    "Between_Rounds": [
+        "Now try these!"
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "A classic Hark the Sound guessing game.", 
+    "Name": "Counting", 
+    "Pair_answers_with_prompts": false, 
+    "Question": [
+        "Can you count these sounds?"
+    ], 
+    "Repeat_rounds": false, 
+    "Things": [
+        {
+            "Answer": [
+                "eight"
+            ], 
+            "Hint": [], 
+            "Name": "eight", 
+            "Picture": [
+                "images/Counting/eight_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/eight_1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "five"
+            ], 
+            "Hint": [], 
+            "Name": "five", 
+            "Picture": [
+                "images/Counting/five_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/five_1", 
+                "Sounds/Counting/five_2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "four"
+            ], 
+            "Hint": [], 
+            "Name": "four", 
+            "Picture": [
+                "images/Counting/four_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/four_1", 
+                "Sounds/Counting/four_2", 
+                "Sounds/Counting/four_3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "nine"
+            ], 
+            "Hint": [], 
+            "Name": "nine", 
+            "Picture": [
+                "images/Counting/nine_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/nine_1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "one"
+            ], 
+            "Hint": [], 
+            "Name": "one", 
+            "Picture": [
+                "images/Counting/one_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/one_1"
+            ]
+        }, 
+        {
+            "Answer": [
+                "seven"
+            ], 
+            "Hint": [], 
+            "Name": "seven", 
+            "Picture": [
+                "images/Counting/seven_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/seven_1", 
+                "Sounds/Counting/seven_2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "six"
+            ], 
+            "Hint": [], 
+            "Name": "six", 
+            "Picture": [
+                "images/Counting/six_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/six_1", 
+                "Sounds/Counting/six_2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "ten"
+            ], 
+            "Hint": [], 
+            "Name": "ten", 
+            "Picture": [
+                "images/Counting/ten_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/ten_1", 
+                "Sounds/Counting/ten_2"
+            ]
+        }, 
+        {
+            "Answer": [
+                "three"
+            ], 
+            "Hint": [], 
+            "Name": "three", 
+            "Picture": [
+                "images/Counting/three_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/three_1", 
+                "Sounds/Counting/three_2", 
+                "Sounds/Counting/three_3"
+            ]
+        }, 
+        {
+            "Answer": [
+                "two"
+            ], 
+            "Hint": [], 
+            "Name": "two", 
+            "Picture": [
+                "images/Counting/two_picture_0.jpg"
+            ], 
+            "Prompt": [
+                "Sounds/Counting/two_1", 
+                "Sounds/Counting/two_2"
+            ]
+        }
+    ]
+}

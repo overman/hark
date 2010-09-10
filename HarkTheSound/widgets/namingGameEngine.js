@@ -3,10 +3,14 @@ dojo.require("dijit.Dialog");
 dojo.require("dijit._Templated");
 dojo.require("dijit._Widget");
 dojo.require("dojox.timing");
+dojo.require("dojo.cache");
+dojo.require("dijit._base.manager");
 
 dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
 
-    templateString: '<div><img class ="hidden" id="gameImage" src=""/></div>',
+    templateString: dojo.cache("HarkTheSound/widgets", "templates/namingGameEngineTemplate.html"),
+
+    widgetsInTemplate: true,
 
     hark: {}, 
     
@@ -19,7 +23,6 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
         this._keyHasGoneUp = true;
         this.gameStarted = false;
         this.currentPrompt = "";
-        this.choiceNode = dojo.byId("choiceBox");
         this._hasMoved = false;
         this._choicesRemaining =  [];
         //listen for options updates
@@ -47,6 +50,7 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
     },
     
     postCreate: function() {
+        this.choiceNode = dojo.byId("choiceBox");
         if (!this.hark.optionsData) { //then must get options from game JSON
             this._presetOptions();
         }
@@ -282,7 +286,6 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
     //  update nodes and present audio 
     _updateDescription: function() {
         //image
-        console.log("Update Description");
         var images = dojo.map(this._currentChoices[this._currentChoiceIndex].Picture, function(item) {return item;});
         if (images.length >= 1) {
             this._randomize(images);
@@ -363,7 +366,7 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
     _changeGameImage: function(imageData) {
         this.currentImageData = imageData;
         this.findVisibleImageArea();
-        
+        console.log(dojo.byId("gameImage"));
         //get rid of current image or else you will see it size to next images' dimensions
         dojo.addClass("gameImage", "hidden");
         this.gameImage.src = "";
@@ -447,8 +450,8 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
         this.promptNode.innerHTML = "Prompt: ";
         this.choiceNode.innerHTML = "Choice: "
         //add node back in case another game instantiated
-        var actionNode = dojo.byId("actionPane");
-        dojo.place("<div id='gameGoesHere'></div>", actionNode );
+        //var actionNode = dojo.byId("actionPane");
+        //dojo.place("<div id='gameGoesHere'></div>", actionNode );
         this.destroyRecursive();
     },
     

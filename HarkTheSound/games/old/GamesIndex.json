@@ -1,0 +1,18 @@
+{
+    "HarkInstructions": "Welcome to Hark The Sound. Use the arrow keys to choose a game to play. Use the \"up\" arrow to start a game.",
+        
+    "Things": [
+        { 
+            "Name": "Naming Games",
+            "Description": "Naming Games: Try to match a given prompt with the corresponding item.",
+            "GamesIndexUrl": "games/Naming Games/GamesIndex.json",
+        },        
+        { 
+            "Name": "Category Games",
+            "Description": "Category Games: Correctly pick the items that do or do not belong in a given category.",
+            "GamesIndexUrl": "games/Category Games/GamesIndex.json",
+        }
+    ]
+}
+
+

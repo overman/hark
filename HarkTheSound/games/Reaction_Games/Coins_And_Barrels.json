@@ -1,0 +1,75 @@
+{
+    "Name": "Coins And Barrels",
+
+    "Type": "Reaction",
+
+    "Description": "Collect as many coins as possible while avoiding barrels. If you hear a coin on the left side, press left. If you hear a coin on the right, then press right. Points are lost if you hit a barrel or if you do not hit a coin.",
+
+    "Instructions": "Welcome to Coins and Barrels. This is a reaction game, so it will be necessary to know what the good sounds and the bad sounds are so you know what you want to react to. You may exit the instructions at any time and begin gameplay by closing this dialog box.",
+
+    "Good_Sounds": [
+        "Sounds/coinsAndBarrelsSounds/coinL",
+        "Sounds/coinsAndBarrelsSounds/coinR",
+    ],
+
+    "Bad_Sounds": [
+        "Sounds/coinsAndBarrelsSounds/barrelL",
+        "Sounds/coinsAndBarrelsSounds/barrelR",
+    ],
+
+    "Reaction_Time": 5000,
+
+    "Game_Play_Images": [
+        "images/coinsAndBarrelsJS.jpg", 
+    ],
+
+    "End_Game_Images": [
+        "images/endScreenJS.jpg",
+    ], 
+
+    "End_Game_Sounds": [
+        "Sounds/coinsAndBarrelsSounds/applause",
+    ], 
+
+    "Game_Time_Length": 180000,    
+    
+    "Pause_Screen_Images": [
+        "images/pauseScreenJS.jpg",
+    ],
+
+    "Pause_Screen_Messages": [
+        "The game is now paused. Press \"P\" to resume gameplay",
+    ],
+
+    "onMissGood_Messages": [
+        "Oh no, you missed a coin. Remember, when you hear a coin, you want move to the side that the sound plays on.",
+    ],
+    
+    "onHitRightButWrong_Messages":[
+        "Yikes! You missed the coin, it was on the left and you pressed right.",
+    ],
+
+    "onHitLeftButWrong_Messages": [
+        "Oh no. You missed the coin, it was on the right and you pressed left.",
+    ],
+
+    "onBadHit_Messages": [
+        "Ouch! Remember, when you hear a barrel, to avoid it just don't press either direction.",
+    ],
+
+    "Reward_Sounds": [
+        "Sounds/coinsAndBarrelsSounds/rewards/reward0",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward1",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward2",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward3",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward4",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward5",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward6",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward7",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward8",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward9",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward10",
+        "Sounds/coinsAndBarrelsSounds/rewards/reward11",
+    ],
+
+}

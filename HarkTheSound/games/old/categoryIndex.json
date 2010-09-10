@@ -1,0 +1,23 @@
+{  
+
+    "Name": "Category",
+
+    "Description": "Category Games: Correctly pick the items that do or do not belong in a given category.",
+            
+    "Games": [
+        { 
+            "Name": "Walmart Categories",
+            "Description": "Walmart Categories: in this category game you learn about what items belong in the different departments in Walmart.",
+            "Tags": [
+                "Category"            
+            ]
+        },
+        { 
+            "Name": "Learn About Food Groups",
+            "Description": "Learn About Food Groups: in this game you can learn about the different food groups, such as fruits, vegetables, breads, meats, and dairy.",
+            "Tags": [
+                "Category"            
+            ]
+        }
+    ]
+}

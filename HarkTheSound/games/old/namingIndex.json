@@ -1,0 +1,114 @@
+{
+
+    "Name": "Naming",
+
+    "Description": "Naming Games: Try to match a given prompt with the corresponding item.",
+    
+    "Games": [
+        { 
+            "Name": "Name That Musical Instrument",
+            "Description": "Name That Musical Instrument: try to guess the instrument from the sound it makes.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Name That Animal",
+            "Description": "Name That Animal: a classic Hark the Sound guessing game.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        {
+            "Name": "Name That Capital's State",
+            "Description": "Name That Capital's State: how well do you know the capitals of these states?",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Name That Color",
+            "Description": "Name That Color: attempt to match common objects with their typical colors.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Name That Holiday",
+            "Description": "Name That Holiday: match these prompts with the corresponding holiday.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Name That Sound",
+            "Description": "Name That Sound: identify environmental sounds.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Spanish Words",
+            "Description": "Spanish Words: do you know the translation of these Spanish words into English?",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "State Nick Names",
+            "Description": "State Nick Names: match the state with its nick name.",
+            "Tags": [
+                "Naming"            
+            ]
+        },
+        { 
+            "Name": "Addition 1 through 5",
+            "Description": "Fun with addition",
+            "Tags": [
+                "Naming", "Math"            
+            ]
+        },
+        { 
+            "Name": "Addition easy 6 through 10",
+            "Description": "More fun with addition",
+            "Tags": [
+                "Naming", "Math"            
+            ]
+        },
+        { 
+            "Name": "Addition hard 6 through 10",
+            "Description": "More challenging addition",
+            "Tags": [
+                "Naming", "Math"            
+            ]
+        },
+        { 
+            "Name": "Counting",
+            "Description": "How good are you at counting?",
+            "Tags": [
+                "Naming", "Math"            
+            ]
+        },
+        { 
+            "Name": "Multiplication drills",
+            "Description": "Fun with addition",
+            "Tags": [
+                "Naming", "Math"            
+            ]
+        },
+                { 
+            "Name": "Braille letters",
+            "Description": "Identify Braille letters given their dots.",
+            "Tags": [
+                "Naming", "Braille"            
+            ]
+        },
+        { 
+            "Name": "Braille whole word contractions",
+            "Description": "Identify Braille whole word contractions from their dots.",
+            "Tags": [
+                "Naming", "Braille"            
+            ]
+        },
+    ]
+}

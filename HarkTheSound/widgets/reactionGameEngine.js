@@ -2,23 +2,24 @@ dojo.provide("widgets.reactionGameEngine");
 dojo.require("dojox.timing._base");
 dojo.require("dijit.Dialog");
 dojo.require("dijit.form.Button");
+dojo.require("dijit.layout.BorderContainer");
 dojo.require("dijit._Templated");
 dojo.require("dijit._Widget");
 dojo.require("dojo.cache");
+dojo.require("dijit._base.manager");
 
 dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
 
-    templateString: dojo.cache("HarkTheSound/widgets", "templates/reactionGameEngine.html"),
+    templateString: dojo.cache("HarkTheSound/widgets", "templates/reactionGameEngineTemplate.html"),
 
     widgetsInTemplate: true,
 
     hark: {}, 
     
     gameData: {}, 
-   
+
     postCreate: function() {
         this.inherited(arguments);
-        console.log(this.gameData); 
          //load screen
         this._loadingDialog = this._showDialog("Loading Screen", "The game is loading.");   
         this._loadingDialog._alreadyInitialized=false;    //user can not close now 
@@ -52,7 +53,6 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         this.responseTime = this.gameData.Reaction_Time;
         this._gameLength = this.gameData.Game_Time_Length;
         this.gamePlayImages = this.gameData.Game_Play_Images;
-        this.gameImage = dojo.byId("gameImage");
         this.gameImage.src = this._oneOf(this.gamePlayImages);
         dojo.removeClass(this.gameImage, 'hidden');
         this.rewardSounds = this.gameData.Reward_Sounds;
@@ -131,9 +131,9 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         dojo.connect(dojo.global, 'onkeydown', this, '_analyzeKey');
         dojo.connect(dojo.global, 'onkeyup', this, '_removeKeyDownFlag');
         this._keyHasGoneUp = true;
-        dojo.connect(dijit.byId("creditsButton"), "onClick", this, "_showCredits");
-        this._creditsDialog = dijit.byId("creditsDialog");
-        dojo.connect(this._creditsDialog, 'hide', this, '_restartGamePlay'); 	
+       // dojo.connect(dijit.byId("creditsButton"), "onClick", this, "_showCredits");
+        //this._creditsDialog = dijit.byId("creditsDialog");
+        //dojo.connect(this._creditsDialog, 'hide', this, '_restartGamePlay'); 	
         var d = new Date();
         this._startTime = d.getTime();
         this._run();
@@ -491,8 +491,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
 
     //just update innerHTML
     _updateScoreDisplay: function() {    
-        var scoreNode = dojo.byId("scoreValue");
-        scoreNode.innerHTML = this.score;
+        this.scoreValue.innerHTML = this.score;
     },
 
     //  @return boolean if allotted for game has passed
@@ -533,8 +532,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         this._gameIsOver = true;    //disables pause
         this.waitingForResponse = false;    //ignore all keys for purpose of game
         this.gameImage.src = this._oneOf(this.endImages);
-        var node2 = dojo.byId("ScoreString");    //change wording to final score
-        node2.innerHTML = "Your final score is: ";
+        this.ScoreString.innerHTML = "Your final score is: "; //change wording to final score
         this._audio.play({url: this._oneOf(this.endSounds), channel: "endGame"});
         //Say final score
         this._audio.say({text: "Congratulations! Your final score is" + String(this.score)});
@@ -555,8 +553,8 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         this.promptNode.innerHTML = "Prompt: ";
         this.choiceNode.innerHTML = "Choice: "
         //add node back in case another game instantiated
-        var actionNode = dojo.byId("actionPane");
-        dojo.place("<div id='gameGoesHere'></div>", actionNode );
+        //var actionNode = dojo.byId("actionPane");
+        //dojo.place("<div id='gameGoesHere'></div>", actionNode );
         this.destroyRecursive();
     }, 
 });

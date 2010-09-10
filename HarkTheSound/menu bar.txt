@@ -1,0 +1,85 @@
+        dojo.require("dijit.MenuBar");
+		dojo.require("dijit.MenuBarItem");
+		dojo.require("dijit.PopupMenuBarItem");
+        dojo.require("dijit.CheckedMenuItem");
+        dojo.require("dijit.PopupMenuItem");
+        dojo.require("dijit.Menu");
+        dojo.require("dijit.MenuItem");
+
+
+        <div id="header" style="margin: 0px;" dojoType="dijit.MenuBar" region="top">
+            <div dojoType="dijit.PopupMenuBarItem" id="switchUsers">
+                    <span>Switch Users</span>
+                    <div dojoType="dijit.Menu">
+                        <div dojoType="dijit.CheckedMenuItem">Ask About Quit</div>
+                        <div dojoType="dijit.PopupMenuItem">
+                            <span>Mover Switch</span>
+                            <div dojoType="dijit.Menu" id="moverMenu">
+                                <div dojoType="dijit.MenuItem">Space</div>
+                                <div dojoType="dijit.MenuItem">Enter</div>
+                                <div dojoType="dijit.MenuItem">Left Arrow</div>
+                                <div dojoType="dijit.MenuItem">Right Arrow</div>
+                                <div dojoType="dijit.MenuItem">Up Arrow</div>
+                                <div dojoType="dijit.MenuItem">Down Arrow</div>
+                            </div>
+                        </div>
+                        <div dojoType="dijit.PopupMenuItem">
+                            <span>Chooser Switch</span>
+                            <div dojoType="dijit.Menu" id="chooserMenu">
+                                <div dojoType="dijit.MenuItem">Space</div>
+                                <div dojoType="dijit.MenuItem">Enter</div>
+                                <div dojoType="dijit.MenuItem">Left Arrow</div>
+                                <div dojoType="dijit.MenuItem">Right Arrow</div>
+                                <div dojoType="dijit.MenuItem">Up Arrow</div>
+                                <div dojoType="dijit.MenuItem">Down Arrow</div>
+                            </div>
+                        </div>
+                        <div dojoType="dijit.MenuItem" id="widgets" onClick="logWidgets();">Log widgets</div>
+                        <div dojoType="dijit.MenuItem" id="destroy" iconClass="dijitIconDelete" onClick="tearDown();">Destroy All</div>
+                    </div>
+            </div>
+            <div dojoType="dijit.PopupMenuBarItem" id="gamePlayOptions">
+                    <span>Game Play</span>
+                    <div dojoType="dijit.Menu" id="gamePlayOptionsMenu">
+                        <div dojoType="dijit.CheckedMenuItem">Repeat Rounds</div>
+                        <div dojoType="dijit.CheckedMenuItem">Pair Answer Choices With Prompts</div>
+                        <div dojoType="dijit.PopupMenuItem">
+                            <span>Choices Per Round</span>
+                            <div dojoType="dijit.Menu" id="choicesPerRound">
+                                <div dojoType="dijit.MenuItem">1</div>
+                                <div dojoType="dijit.MenuItem">2</div>
+                                <div dojoType="dijit.MenuItem">3</div>
+                                <div dojoType="dijit.MenuItem">4</div>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+            <div dojoType="dijit.PopupMenuBarItem">
+                <span>Advanced</span>
+                <div dojoType="dijit.Menu" id="advancedOptionsMenu">
+                    <div dojoType="dijit.CheckedMenuItem">Key Repeat</div>
+                    <div dojoType="dijit.PopupMenuItem">
+                            <span>Prompt Time</span>
+                            <div dojoType="dijit.Menu" id="promptTime">
+                                <div dojoType="dijit.MenuItem">0</div>
+                                <div dojoType="dijit.MenuItem">1</div>
+                                <div dojoType="dijit.MenuItem">2</div>
+                                <div dojoType="dijit.MenuItem">3</div>
+                                <div dojoType="dijit.MenuItem">4</div>
+                                <div dojoType="dijit.MenuItem">5</div>
+                            </div>
+                    </div>
+                    <div dojoType="dijit.PopupMenuItem">
+                            <span>Key Delay</span>
+                            <div dojoType="dijit.Menu" id="keyDelay">
+                                <div dojoType="dijit.MenuItem">0</div>
+                                <div dojoType="dijit.MenuItem">1</div>
+                                <div dojoType="dijit.MenuItem">2</div>
+                                <div dojoType="dijit.MenuItem">3</div>
+                                <div dojoType="dijit.MenuItem">4</div>
+                                <div dojoType="dijit.MenuItem">5</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>

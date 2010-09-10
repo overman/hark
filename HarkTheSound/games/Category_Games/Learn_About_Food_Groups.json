@@ -1,0 +1,496 @@
+{
+    "Categories": [
+        {
+            "Exclusion_Question": [
+                "Which of these is not a bread?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these is a bread?"
+            ], 
+            "Name": "breads", 
+            "Things": [
+                {
+                    "Answer": [
+                        "bagel"
+                    ], 
+                    "Hint": [
+                        "This a round piece of bread with a hole in the middle"
+                    ], 
+                    "Name": "bagel", 
+                    "Picture": [
+                        { 
+                            "url":"images/Foods/bagel_picture_1.jpg", 
+                            "width": 384, 
+                            "height": 256
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "breadstick"
+                    ], 
+                    "Hint": [], 
+                    "Name": "breadstick", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/breadstick_picture_1.jpg", 
+                            "width": 275, 
+                            "height": 300 
+                        }                        
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "crasont"
+                    ], 
+                    "Hint": [], 
+                    "Name": "croissant", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/croissant_picture_1.jpg", 
+                            "width": 400, 
+                            "height": 300
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "muffin"
+                    ], 
+                    "Hint": [
+                        "Blueberry is a common flavor for this type of bread"
+                    ], 
+                    "Name": "muffin", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/muffin_picture_1.jpg", 
+                            "width": 460, 
+                            "height": 463
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "rolls"
+                    ], 
+                    "Hint": [
+                        "This bread is good with dinner"
+                    ], 
+                    "Name": "rolls", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/rolls_picture_1.jpg", 
+                            "width": 500, 
+                            "height": 391
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which of these is not in the dairy food group?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these is in the dairy food group?"
+            ], 
+            "Name": "dairy", 
+            "Things": [
+                {
+                    "Answer": [
+                        "american cheese"
+                    ], 
+                    "Hint": [], 
+                    "Name": "american cheese", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/american cheese_picture_1.jpg", 
+                            "width": 302, 
+                            "height": 231
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "cheddar cheese"
+                    ], 
+                    "Hint": [], 
+                    "Name": "cheddar cheese", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/cheddar cheese_picture_1.jpg", 
+                            "width": 150, 
+                            "height": 215
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "ice cream"
+                    ], 
+                    "Hint": [
+                        "This dairy food is a cold treat"
+                    ], 
+                    "Name": "ice cream", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/ice cream_picture_1.jpg", 
+                            "width": 261, 
+                            "height": 272
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "milk"
+                    ], 
+                    "Hint": [
+                        "You pour this dairy item on your cereal."
+                    ], 
+                    "Name": "milk", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/milk_picture_1.jpg", 
+                            "width": 432, 
+                            "height": 488
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "yogurt"
+                    ], 
+                    "Hint": [], 
+                    "Name": "yogurt", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/yogurt_picture_1.jpg", 
+                            "width": 316, 
+                            "height": 375
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which of these is not a fruit?", 
+                "Which of these foods is not a fruit?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these is a fruit?", 
+                "Which of these foods is a fruit?"
+            ], 
+            "Name": "fruits", 
+            "Things": [
+                {
+                    "Answer": [
+                        "apple"
+                    ], 
+                    "Hint": [], 
+                    "Name": "apple", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/apple_picture_1.jpg", 
+                            "width": 300, 
+                            "height": 200
+                        },
+                        { 
+                            "url": "images/Foods/apple_picture_2.jpg", 
+                            "width": 288, 
+                            "height": 327
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "banana"
+                    ], 
+                    "Hint": [], 
+                    "Name": "banana", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/banana_picture_0.jpg", 
+                            "width": 100, 
+                            "height": 100
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "grapes"
+                    ], 
+                    "Hint": [], 
+                    "Name": "grapes", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/grapes_picture_1.jpg", 
+                            "width": 300, 
+                            "height": 200
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "lemon"
+                    ], 
+                    "Hint": [], 
+                    "Name": "lemon", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/lemon_picture_0.jpg", 
+                            "width": 400, 
+                            "height": 600
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "orange"
+                    ], 
+                    "Hint": [], 
+                    "Name": "orange", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/orange_picture_1.jpg", 
+                            "width": 600, 
+                            "height": 400
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "pear"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pear", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/pear_picture_1.jpg", 
+                            "width": 278, 
+                            "height": 236
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "pineapple"
+                    ], 
+                    "Hint": [], 
+                    "Name": "pineapple", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/pineapple_picture_0.jpg", 
+                            "width": 400, 
+                            "height": 600
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "strawberry"
+                    ], 
+                    "Hint": [], 
+                    "Name": "strawberry", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/strawberry_picture_1.jpg", 
+                            "width": 200, 
+                            "height": 300
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "watermelon"
+                    ], 
+                    "Hint": [], 
+                    "Name": "watermelon", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/watermelon_picture_0.jpg", 
+                            "width": 80, 
+                            "height": 60
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which of these is not a meat?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these is a meat?"
+            ], 
+            "Name": "meats", 
+            "Things": [
+                {
+                    "Answer": [
+                        "chicken"
+                    ], 
+                    "Hint": [], 
+                    "Name": "chicken", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/chicken_picture_1.jpg", 
+                            "width": 550, 
+                            "height": 413
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "fish"
+                    ], 
+                    "Hint": [], 
+                    "Name": "fish", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/fish_picture_1.jpg", 
+                            "width": 121, 
+                            "height": 65
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "ham"
+                    ], 
+                    "Hint": [], 
+                    "Name": "ham", 
+                    "Picture": [
+                        { 
+                            "url":  "images/Foods/ham_picture_1.jpg", 
+                            "width": 360, 
+                            "height": 240
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "steak"
+                    ], 
+                    "Hint": [], 
+                    "Name": "steak", 
+                    "Picture": [
+                        { 
+                            "url":  "images/Foods/steak_picture_1.jpg", 
+                            "width": 450, 
+                            "height": 302
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "turkey"
+                    ], 
+                    "Hint": [
+                        "You eat this meat at Thanksgiving"
+                    ], 
+                    "Name": "turkey", 
+                    "Picture": [
+                        { 
+                            "url":  "images/Foods/turkey_picture_1.jpg", 
+                            "width": 360, 
+                            "height": 242
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "Exclusion_Question": [
+                "Which of these is not a vegetable?"
+            ], 
+            "Inclusion_Question": [
+                "Which of these is a vegetable?"
+            ], 
+            "Name": "vegetables", 
+            "Things": [
+                {
+                    "Answer": [
+                        "broccoli"
+                    ], 
+                    "Hint": [
+                        "This vegetable looks like a tiny green tree."
+                    ], 
+                    "Name": "broccoli", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/broccoli_picture_1.jpg", 
+                            "width": 160, 
+                            "height": 200
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "carrots"
+                    ], 
+                    "Hint": [
+                        "Rabbits are known to eat this vegetable"
+                    ], 
+                    "Name": "carrots", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/carrots_picture_1.jpg", 
+                            "width": 200, 
+                            "height": 300
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "corn"
+                    ], 
+                    "Hint": [
+                        "This vegetable is yellow and on the cob"
+                    ], 
+                    "Name": "corn", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/corn_picture_1.jpg", 
+                            "width": 200, 
+                            "height": 300
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "green beans"
+                    ], 
+                    "Hint": [], 
+                    "Name": "green beans", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/green beans_picture_1.jpg", 
+                            "width": 331, 
+                            "height": 224
+                        }
+                    ]
+                }, 
+                {
+                    "Answer": [
+                        "potato"
+                    ], 
+                    "Hint": [
+                        "You might eat this vegetable baked or mashed."
+                    ], 
+                    "Name": "potato", 
+                    "Picture": [
+                        { 
+                            "url": "images/Foods/potato_picture_1.jpg", 
+                            "width": 600, 
+                            "height": 400
+                        }
+                    ]
+                }
+            ]
+        }
+    ], 
+    "Choices_per_round": 4, 
+    "Description": "In this game you can learn about the different food groups, such as fruits, vegetables, breads, meats, and dairy.", 
+    "Name": "Learn About Food Groups", 
+    "Repeat rounds": false
+}

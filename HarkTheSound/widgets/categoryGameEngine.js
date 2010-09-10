@@ -10,7 +10,9 @@ dojo.require("dojox.timing");
 
 dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
 
-    templateString: '<div><img class ="hidden" id="gameImage" src=""/></div>',
+    templateString: dojo.cache("HarkTheSound/widgets", "templates/namingGameEngineTemplate.html"),
+
+    widgetsInTemplate: true,
 
     hark: {}, 
     
@@ -22,7 +24,6 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
         this._categoriesIndex = 0;   //current category as a position of this._categories, assigned later.
         this._questionAttempts = 0;
         this.correctThing = null;
-        this.choiceNode = dojo.byId("choiceBox");
         this._hasMoved = false; //movement within answer choices
         this.gameStarted = false;
         this.currentImageData = {};
@@ -56,6 +57,7 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     },   
     
     postCreate: function() {
+        this.choiceNode = dojo.byId("choiceBox");
         if (!this.hark.optionsData) { //then must get options from game JSON
             this._presetOptions();
         }
@@ -418,7 +420,6 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
     //  used for changing game Image. resizing is done in this.resizeGameImage. This is for getting
     //  the proper aspect ratio upon insertion of a new image src    
     _changeGameImage: function(imageData) {
-        console.log("Changing Image");
         this.currentImageData = imageData;
         this.findVisibleImageArea();
         //get rid of current image or else you will see it size to next images' dimensions
@@ -449,7 +450,6 @@ dojo.declare("widgets.categoryGameEngine", [dijit._Widget, dijit._Templated], {
             this.gameImage.style.height = "auto";
         }
         //now change image source
-        console.log("Avail Width: ", this.availableWidth, "Avail Height: ", this.availableHeight);
         dojo.removeClass("gameImage", "hidden");
         this.gameImage.src = this.currentImageData.url;       
         

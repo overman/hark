@@ -175,12 +175,15 @@ dojo.declare('harkTheSound', null, {
         case "Math":
         case "Braille":
             this.currentGameWidget = new widgets.namingGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            this.currentGameWidget.startup();
             break;
         case "Category":
             this.currentGameWidget = new widgets.categoryGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            this.currentGameWidget.startup();
             break;
         case "Reaction":
             this.currentGameWidget = new widgets.reactionGameEngine({gameData: data, hark: this}, 'gameGoesHere');
+            this.currentGameWidget.startup();
             break;
         }
         this._waitingForResponse = false;
