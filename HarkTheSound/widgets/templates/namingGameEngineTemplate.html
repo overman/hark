@@ -1,18 +1,15 @@
 <div style="width:100%; height: 100%; border: 0px solid white;"> 
     <div style="border: 0px solid white;" dojoType="dijit.layout.BorderContainer" id = "mainContents" liveSplitters="true">
-        <div dojoType="dijit.layout.ContentPane" region="top" id ="header" splitter="false">
-            <h1><div id ="instructions">Welcome</div></h1>
-        </div>
-        <div dojoType="dijit.layout.ContentPane" id="game" region="center" splitter="true">
-            <img class ="hidden" id="gameImage" src=""/>
-        </div>
-        <div dojoType="dijit.layout.ContentPane" id="footer" region="bottom" splitter="false">
+        <div dojoType="dijit.layout.ContentPane" id="header" region="top" splitter="false">
             <table style="height:100%; width:100%;">
                 <tr>
                 <td width = "50%"><h1 id = "choiceBox">Choice: </h1></td>
                 <td><h1 id = "promptBox">Prompt: </h1></td>
                 </tr>
             </table>
+        </div>
+        <div dojoType="dijit.layout.ContentPane" id="game" region="center" splitter="true">
+            <div id="gameImageLocation"><img class ="hidden" id="gameImage" src=""/></div>
         </div>
     </div>
 </div>
