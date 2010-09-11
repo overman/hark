@@ -366,7 +366,6 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
     _changeGameImage: function(imageData) {
         this.currentImageData = imageData;
         this.findVisibleImageArea();
-        console.log(dojo.byId("gameImage"));
         //get rid of current image or else you will see it size to next images' dimensions
         dojo.addClass("gameImage", "hidden");
         this.gameImage.src = "";
@@ -396,7 +395,6 @@ dojo.declare('widgets.namingGameEngine', [dijit._Widget, dijit._Templated], {
         //now change image source
         dojo.removeClass("gameImage", "hidden");
         this.gameImage.src = this.currentImageData.url;
-        console.log("Url: ", this.currentImageData.url);
         
     },
     
