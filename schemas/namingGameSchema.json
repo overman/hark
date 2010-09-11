@@ -1,0 +1,107 @@
+{
+    "title":"NamingGame",
+    "description":"This form allows you to create and edit your own Naming Game.",
+    "type":"object",
+    "properties": {
+        "Name": {
+            "type":"string",
+            "description": "Enter a brief title for your game."
+            "title": "Name"
+        }, 
+        "Between_Rounds": {
+            "type": "array",
+            "description": "Things to say between rounds.",
+            "title":"Between Rounds",
+            "items": {
+                "type":"string"
+            }            
+        },
+        "Choices_per_round": {
+            "type": "integer",
+            "maximum": 4,
+            "minimum": 1,
+            "description": "Number of things to pick each round.",
+            "title": "Choices Per Round"
+        },
+        "Description": {
+            "type": "string",
+            "description": "Enter a brief description of your game.",
+            "title": "Description"
+        },
+        "Pair_answers_with_prompts": {
+            "type": "boolean",
+            "description": "Should answer choices be paried with prompts?",
+            "title": "Pair Answers With Prompts"
+        },
+        "Question": {
+            "type":"string",
+            "description": "Question prompts as text or sound file url, url must start with 'Sounds' right now",
+            "title": "Questions",
+        },
+        "Repeat rounds": {
+            "type":"boolean",
+            "description": "Should roundds be repeated?",
+            "title": "Repeat Rounds"
+        },
+        "Things": {
+            "type": "array",
+            "description": "The game content. The 'things' that will be named.",
+            "title": "Things",
+            "items": {
+                "type": "object",
+                "description": "An individual thing.",
+                "title":"A Thing",
+                "properties": {
+                    "Answer": {
+                        "type":"string",
+                        "description":"I think this was deprecated?",
+                        "title":"Answer"
+                    },
+                    "Hint": {
+                        "type": "array",
+                        "description": "A list of hints to help player if they miss the question the first time.",
+                        "title": "Hints",
+                        "items": {
+                            "type":"string",
+                            "description":"A hint. It Can be sound url or text.",
+                            "title":"Hint"
+                        },
+                    },
+                    "Name": {
+                        "type":"string",
+                        "description": "The name of the thing.",
+                        "title":"Thing Name"
+                    },
+                    "Picture": {
+                        "type":"array",
+                        "description":"A list of picture data.",
+                        "title": "Pictures",
+                        "items": {
+                            "type": "object",
+                            "desciption":"An image url, along with its height and width."
+                            "title":"Picture",
+                            "properties": {
+                                "url":{
+                                    "type":"string",
+                                    "description":"Url to the image.",
+                                    "title":"Url"                        
+                                },               
+                                "width":{
+                                    "type":"string",
+                                    "description":"Width in pixels."
+                                    "title":"Width"
+                                },
+                                "height":{
+                                    "type":"string",
+                                    "description":"Height in pixels.",
+                                    "title":"Height"
+                                }
+                            }
+                        }
+                    },
+                }
+            }
+            
+        }
+    }
+}
