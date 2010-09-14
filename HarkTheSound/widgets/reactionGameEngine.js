@@ -19,11 +19,22 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
     
     gameData: {}, 
 
-    postCreate: function() {
-        this.inherited(arguments);
-         //load screen
+    constructor: function() {
         this._loadingDialog = this._showDialog("Loading Screen", "The game is loading.");   
         this._loadingDialog._alreadyInitialized=false;    //user can not close now 
+
+        //fixed for all reaction games???
+        this._numberOfMilestonesHit = 0;
+        this.score = 1000;    //initial score
+        this.waitingForResponse = false;    //waiting for user input
+
+        this.lastSoundPlayed = "";	
+        this._gameIsPaused = false;
+        this._gameIsOver = false;    //boolean for controlling pause validity
+        this._timeSpentOnPause = 0;
+        this._pauseStartTime = 0;
+        this._currentlyReadingScore = false;
+        this._dontFinishRead = false;
 
         var def = uow.getAudio({defaultCaching: true});    //get JSonic
         def.then(dojo.hitch(this, function(audio) {
@@ -36,19 +47,13 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
             }));
             dojo.publish("namingGameEngineStartup", ["constructor_ready"]);
         })); 
-        
-        //fixed for all reaction games???
-        this._numberOfMilestonesHit = 0;
-        this.score = 1000;    //initial score
-        this.waitingForResponse = false;    //waiting for user input
-        this.lastSoundPlayed = "";	
-        this._gameIsPaused = false;
-        this._gameIsOver = false;    //boolean for controlling pause validity
-        this._timeSpentOnPause = 0;
-        this._pauseStartTime = 0;
-        this._currentlyReadingScore = false;
-        this._dontFinishRead = false;
+    },
 
+    postCreate: function() {
+        this.inherited(arguments);
+         //load screen
+        this.connect(dojo.global, 'onresize', 'resizeGameImage');
+        
         this.goodSounds = this.gameData.Good_Sounds;
         this.badSounds = this.gameData.Bad_Sounds;
         this.responseTime = this.gameData.Reaction_Time;
