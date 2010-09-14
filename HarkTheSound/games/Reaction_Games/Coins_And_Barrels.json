@@ -20,11 +20,19 @@
     "Reaction_Time": 5000,
 
     "Game_Play_Images": [
-        "images/coinsAndBarrelsJS.jpg", 
+        { 
+            "url": "images/coinsAndBarrels/mainImage.jpg", 
+            "width": 640, 
+            "height": 480
+        }
     ],
 
     "End_Game_Images": [
-        "images/endScreenJS.jpg",
+        { 
+            "url": "images/coinsAndBarrels/endScreen.jpg", 
+            "width": 640, 
+            "height": 480
+        }
     ], 
 
     "End_Game_Sounds": [
@@ -34,7 +42,11 @@
     "Game_Time_Length": 180000,    
     
     "Pause_Screen_Images": [
-        "images/pauseScreenJS.jpg",
+        { 
+            "url": "images/coinsAndBarrels/pauseScreen.jpg", 
+            "width": 640, 
+            "height": 480
+        }
     ],
 
     "Pause_Screen_Messages": [

@@ -8,6 +8,8 @@ dojo.require("dijit._Widget");
 dojo.require("dojo.cache");
 dojo.require("dijit._base.manager");
 
+//IMAGES NOT APPEARING
+
 dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
 
     templateString: dojo.cache("HarkTheSound/widgets", "templates/reactionGameEngineTemplate.html"),
@@ -53,7 +55,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         this.responseTime = this.gameData.Reaction_Time;
         this._gameLength = this.gameData.Game_Time_Length;
         this.gamePlayImages = this.gameData.Game_Play_Images;
-        this.gameImage.src = this._oneOf(this.gamePlayImages);
+        this._changeGameImage(this._oneOf(this.gamePlayImages));
         dojo.removeClass(this.gameImage, 'hidden');
         this.rewardSounds = this.gameData.Reward_Sounds;
         this.missedGoodMessages = this.gameData.onMissGood_Messages; 
@@ -450,7 +452,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         }
         else {    //run again
             this._gameIsPaused = false;
-            this.gameImage.src = this._oneOf(this.gamePlayImages);
+            this._changeGameImage(this._oneOf(this.gamePlayImages));
             this._run("this._restartGamePlay");    //just start over with a new sound and timer
         }
         
@@ -465,7 +467,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
         var pauseMessage = this._oneOf(this.pauseMessages);
         this._audio.say({text : pauseMessage}).callBefore(dojo.hitch(this, function() 
         {
-            this.gameImage.src = this._oneOf(this.pauseImages);
+            this._changeGameImage(this._oneOf(this.pauseImages));
         }));
     },
     
@@ -488,6 +490,81 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
                 }));
         }
     },
+
+    //  used for changing game Image. resizing is done in this.resizeGameImage. This is for getting
+    //  the proper aspect ratio upon insertion of a new image src    
+    _changeGameImage: function(imageData) {
+        this.currentImageData = imageData;
+        this.findVisibleImageArea();
+        //get rid of current image or else you will see it size to next images' dimensions
+        dojo.addClass(this.gameImage, "hidden");
+        this.gameImage.src = "";
+        
+        //get image ratio
+        var imageRatio = this.currentImageData.width/this.currentImageData.height;
+        var windowRatio = this.availableWidth/this.availableHeight;
+        if ((this.currentImageData.height == 0) || ( this.availableHeight == 0)) {
+            this.gameImage.style.height = "0px";
+            this.gameImage.style.width = "0px";
+        }
+        else if (windowRatio < 0) {
+            //then window sized down really really small, div's have reorganized
+            this.gameImage.style.height = "0px";
+            this.gameImage.style.width = "0px";
+        }
+        else if (windowRatio >= imageRatio) {
+            //set by height
+            this.gameImage.style.height = this.availableHeight + "px";
+            this.gameImage.style.width = "auto";
+        }
+        else {
+            //set by width
+            this.gameImage.style.width = this.availableWidth + "px";
+            this.gameImage.style.height = "auto";
+        }
+        //now change image source
+        dojo.removeClass(this.gameImage, "hidden");
+        this.gameImage.src = this.currentImageData.url;  
+        console.log("availablewidth: ", this.availableWidth, " availableHeight: ", this.availableHeight);
+        
+    },
+    
+    //  finds available space for game image and sets this.availableWidth and this.availableHeight
+    findVisibleImageArea: function () {
+        this.availableWidth = dojo.global.innerWidth - 25;   //25 is for padding and div's
+        var rewardTopPosition = this.hark.getElementTopPosition(this.gameImage);
+        this.availableHeight = dojo.global.innerHeight - rewardTopPosition - 25 ; //25 is for padding
+        //console.log("gameNode: ", this.hark.getElementTopPosition(dojo.byId("gameGoesHere")));
+    },
+    
+    //  works correctly if an image is already loaded and has established style height/width
+    //  for inserting new image use  this._changeGameImage()
+    resizeGameImage: function () {
+        this.findVisibleImageArea();
+        //get image ratio 
+        var imageRatio = this.currentImageData.width/this.currentImageData.height;
+        var windowRatio = this.availableWidth/this.availableHeight;
+        if ((this.currentImageData.height == 0) || ( this.availableHeight == 0)) {
+            this.gameImage.style.height = "0px";
+            this.gameImage.style.width = "0px";
+        }
+        else if (windowRatio < 0) {
+            //then window sized down really really small, div's have reorganized
+            this.gameImage.style.height = "0px";
+            this.gameImage.style.width = "0px";
+        }
+        else if (windowRatio >= imageRatio) {
+            //set by height
+            this.gameImage.style.height = this.availableHeight + "px";
+            this.gameImage.style.width = "auto";
+        }
+        else {
+            //set by width
+            this.gameImage.style.width = this.availableWidth + "px";
+            this.gameImage.style.height = "auto";
+        }
+    },   
+    
 
     //just update innerHTML
     _updateScoreDisplay: function() {    
@@ -531,7 +608,7 @@ dojo.declare('widgets.reactionGameEngine', [dijit._Widget, dijit._Templated], {
     _endGame: function() {
         this._gameIsOver = true;    //disables pause
         this.waitingForResponse = false;    //ignore all keys for purpose of game
-        this.gameImage.src = this._oneOf(this.endImages);
+        this._changeGameImage(this._oneOf(this.endImages));
         this.ScoreString.innerHTML = "Your final score is: "; //change wording to final score
         this._audio.play({url: this._oneOf(this.endSounds), channel: "endGame"});
         //Say final score
